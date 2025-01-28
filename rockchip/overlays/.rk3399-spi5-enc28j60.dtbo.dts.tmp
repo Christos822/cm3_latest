@@ -1,0 +1,52 @@
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3399-spi5-enc28j60.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3399-spi5-enc28j60.dts"
+/dts-v1/;
+/plugin/;
+
+# 1 "./scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h" 1
+# 5 "arch/arm64/boot/dts/rockchip/overlays/rk3399-spi5-enc28j60.dts" 2
+# 1 "./scripts/dtc/include-prefixes/dt-bindings/pinctrl/rockchip.h" 1
+# 6 "arch/arm64/boot/dts/rockchip/overlays/rk3399-spi5-enc28j60.dts" 2
+# 1 "./scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/irq.h" 1
+# 7 "arch/arm64/boot/dts/rockchip/overlays/rk3399-spi5-enc28j60.dts" 2
+
+/ {
+ metadata {
+  title = "Enable ENC28J60 on SPI5";
+  compatible = "unknown";
+  category = "misc";
+  description = "Enable Microchip ENC28J60 SPI Ethernet controller on SPI5.
+Warning: this overlay is only compatiable with Liwan, which is a customized version of ROCK 4C.
+This overlay is NOT compatiable with regular ROCK 4C.";
+ };
+};
+
+&spi5 {
+ status = "okay";
+ #address-cells = <1>;
+ #size-cells = <0>;
+ pinctrl-names = "default";
+ pinctrl-0 = <&spi5_clk &spi5_tx &spi5_rx &spi5_cs0>;
+
+ ethernet: enc28j60@0 {
+  compatible = "microchip,enc28j60";
+  reg = <0>;
+  spi-max-frequency = <20000000>;
+
+  pinctrl-names = "default";
+  pinctrl-0 = <&enc28j60_int_pins>;
+
+  interrupt-parent = <&gpio1>;
+  interrupts = <9 2>;
+ };
+};
+
+&pinctrl {
+ enc28j60 {
+  enc28j60_int_pins: enc28j60-int-pins {
+   rockchip,pins = <1 9 0 &pcfg_pull_up>;
+  };
+ };
+};

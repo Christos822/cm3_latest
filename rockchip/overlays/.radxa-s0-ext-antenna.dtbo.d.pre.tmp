@@ -1,0 +1,4 @@
+radxa-s0-ext-antenna.o: \
+ arch/arm64/boot/dts/rockchip/overlays/radxa-s0-ext-antenna.dts \
+ scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h \
+ scripts/dtc/include-prefixes/dt-bindings/pinctrl/rockchip.h

@@ -1,0 +1,1 @@
+rock-3b-sata2.o: arch/arm64/boot/dts/rockchip/overlays/rock-3b-sata2.dts

@@ -1,0 +1,1 @@
+arch/arm64/boot/dts/rockchip/overlays/rock-5b-dwc3_1-host.dtbo: arch/arm64/boot/dts/rockchip/overlays/.rock-5b-dwc3_1-host.dtbo.dts.tmp

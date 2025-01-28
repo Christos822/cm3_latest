@@ -1,0 +1,20 @@
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3399-pwm0.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3399-pwm0.dts"
+/dts-v1/;
+/plugin/;
+
+/ {
+ metadata {
+  title = "Enable PWM0";
+  compatible = "rockchip,rk3399";
+  category = "misc";
+  exclusive = "GPIO4_C2";
+  description = "Enable PWM0 on pin 11.";
+ };
+};
+
+&pwm0 {
+ status = "okay";
+};

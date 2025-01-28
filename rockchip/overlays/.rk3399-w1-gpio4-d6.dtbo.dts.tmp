@@ -1,0 +1,31 @@
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3399-w1-gpio4-d6.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3399-w1-gpio4-d6.dts"
+/dts-v1/;
+/plugin/;
+
+# 1 "./scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h" 1
+# 5 "arch/arm64/boot/dts/rockchip/overlays/rk3399-w1-gpio4-d6.dts" 2
+# 1 "./scripts/dtc/include-prefixes/dt-bindings/pinctrl/rockchip.h" 1
+# 6 "arch/arm64/boot/dts/rockchip/overlays/rk3399-w1-gpio4-d6.dts" 2
+
+/ {
+ metadata {
+  title = "Enable 1-Wire on GPIO4_D6";
+  compatible = "rockchip,rk3399";
+  category = "misc";
+  exclusive = "GPIO4_D6";
+  description = "Enable 1-Wire on GPIO4_D6.
+On ROCK 4 this is pin 37.";
+ };
+};
+
+&{/} {
+ w1: onewire {
+  compatible = "w1-gpio";
+  pinctrl-names = "default";
+  gpios = <&gpio4 30 0>;
+  status = "okay";
+ };
+};

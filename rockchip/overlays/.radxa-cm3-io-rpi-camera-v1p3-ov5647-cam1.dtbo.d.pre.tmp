@@ -1,0 +1,4 @@
+radxa-cm3-io-rpi-camera-v1p3-ov5647-cam1.o: \
+ arch/arm64/boot/dts/rockchip/overlays/radxa-cm3-io-rpi-camera-v1p3-ov5647-cam1.dts \
+ scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h \
+ scripts/dtc/include-prefixes/dt-bindings/pinctrl/rockchip.h

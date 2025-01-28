@@ -1,0 +1,4 @@
+radxa-cm3s-io-csi1-okdo-5mp-camera.o: \
+ arch/arm64/boot/dts/rockchip/overlays/radxa-cm3s-io-csi1-okdo-5mp-camera.dts \
+ scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h \
+ scripts/dtc/include-prefixes/dt-bindings/pinctrl/rockchip.h

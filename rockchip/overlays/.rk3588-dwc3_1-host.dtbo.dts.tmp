@@ -1,0 +1,22 @@
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3588-dwc3_1-host.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3588-dwc3_1-host.dts"
+/dts-v1/;
+/plugin/;
+
+/ {
+ metadata {
+  title = "Set OTG port 1 to Host mode";
+  compatible = "radxa,rock-5b-plus";
+  category = "misc";
+  exclusive = "usbdrd_dwc3_1-dr_mode";
+  description = "Set OTG port 1 to Host mode.
+Use this when you want to connect USB devices.";
+ };
+};
+
+&usbdrd_dwc3_1 {
+ status = "okay";
+ dr_mode = "host";
+};

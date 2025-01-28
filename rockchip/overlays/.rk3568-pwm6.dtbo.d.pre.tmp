@@ -1,0 +1,1 @@
+rk3568-pwm6.o: arch/arm64/boot/dts/rockchip/overlays/rk3568-pwm6.dts

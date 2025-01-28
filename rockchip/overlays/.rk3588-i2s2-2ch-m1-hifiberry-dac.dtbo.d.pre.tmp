@@ -1,0 +1,2 @@
+rk3588-i2s2-2ch-m1-hifiberry-dac.o: \
+ arch/arm64/boot/dts/rockchip/overlays/rk3588-i2s2-2ch-m1-hifiberry-dac.dts

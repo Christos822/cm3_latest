@@ -1,0 +1,1 @@
+rock-5a-sata.o: arch/arm64/boot/dts/rockchip/overlays/rock-5a-sata.dts

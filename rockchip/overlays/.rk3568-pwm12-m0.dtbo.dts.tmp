@@ -1,0 +1,24 @@
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3568-pwm12-m0.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3568-pwm12-m0.dts"
+/dts-v1/;
+/plugin/;
+
+/ {
+ metadata {
+  title = "Enable PWM12-M0";
+  compatible = "radxa,cm3j-rpi-cm4-io";
+  category = "misc";
+  exclusive = "GPIO3_B7";
+  description = "Enable PWM12-M0.
+On Radxa CM3J RPI CM4 IO this is pin 32.
+";
+ };
+};
+
+&pwm12 {
+ status = "okay";
+ pinctrl-names = "active";
+ pinctrl-0 = <&pwm12m0_pins>;
+};

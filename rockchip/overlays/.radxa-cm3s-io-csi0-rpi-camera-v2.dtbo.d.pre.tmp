@@ -1,0 +1,4 @@
+radxa-cm3s-io-csi0-rpi-camera-v2.o: \
+ arch/arm64/boot/dts/rockchip/overlays/radxa-cm3s-io-csi0-rpi-camera-v2.dts \
+ scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h \
+ scripts/dtc/include-prefixes/dt-bindings/pinctrl/rockchip.h

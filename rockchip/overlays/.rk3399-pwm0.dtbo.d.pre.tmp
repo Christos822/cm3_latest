@@ -1,0 +1,1 @@
+rk3399-pwm0.o: arch/arm64/boot/dts/rockchip/overlays/rk3399-pwm0.dts

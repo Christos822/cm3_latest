@@ -1,0 +1,2 @@
+rk3588-i2c1-m4.o: \
+ arch/arm64/boot/dts/rockchip/overlays/rk3588-i2c1-m4.dts

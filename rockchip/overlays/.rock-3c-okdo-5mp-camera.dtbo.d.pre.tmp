@@ -1,0 +1,5 @@
+rock-3c-okdo-5mp-camera.o: \
+ arch/arm64/boot/dts/rockchip/overlays/rock-3c-okdo-5mp-camera.dts \
+ arch/arm64/boot/dts/rockchip/overlays/rock-3c-ov5647.dtsi \
+ scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h \
+ scripts/dtc/include-prefixes/dt-bindings/pinctrl/rockchip.h

@@ -1,0 +1,23 @@
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3308-pwm8.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3308-pwm8.dts"
+/dts-v1/;
+/plugin/;
+
+/ {
+ metadata {
+  title = "Enable PWM8";
+  compatible = "radxa,rock-s0";
+  category = "misc";
+  exclusive = "GPIO0_C1";
+  description = "Enable PWM8.
+On ROCK S0 this is pin 31.";
+ };
+};
+
+&pwm8 {
+ status = "okay";
+ pinctrl-names = "default";
+ pinctrl-0 = <&pwm8_pin>;
+};

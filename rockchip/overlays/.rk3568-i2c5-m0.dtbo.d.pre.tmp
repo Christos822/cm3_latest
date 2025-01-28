@@ -1,0 +1,2 @@
+rk3568-i2c5-m0.o: \
+ arch/arm64/boot/dts/rockchip/overlays/rk3568-i2c5-m0.dts

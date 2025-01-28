@@ -1,0 +1,41 @@
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3308-i2c3-m0.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3308-i2c3-m0.dts"
+/dts-v1/;
+/plugin/;
+
+# 1 "./scripts/dtc/include-prefixes/dt-bindings/pinctrl/rockchip.h" 1
+# 5 "arch/arm64/boot/dts/rockchip/overlays/rk3308-i2c3-m0.dts" 2
+
+/ {
+ metadata {
+  title = "Enable I2C3-M0";
+  compatible = "radxa,rockpis", "radxa,rock-s0";
+  category = "misc";
+  exclusive = "GPIO0_B7", "GPIO0_C0", "pwm2", "pwm3";
+  description = "Enable I2C3-M0.
+On Radxa ROCK PI S this is SDA pin 11 & SCL pin 13.
+On Radxa ROCK S0 this is SDA pin 27 & SCL pin 28.";
+    };
+};
+
+&i2c3 {
+ status = "okay";
+ pinctrl-names = "default";
+ pinctrl-0 = <&i2c3m0_xfer>;
+};
+
+&pwm2 {
+ status = "disabled";
+};
+
+&pwm3 {
+ status = "disabled";
+};
+
+&i2c3m0_xfer {
+ rockchip,pins =
+  <0 15 2 &pcfg_pull_up_12ma>,
+  <0 16 2 &pcfg_pull_up_12ma>;
+};

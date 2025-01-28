@@ -1,0 +1,2 @@
+rk3588-uart4-m0.o: \
+ arch/arm64/boot/dts/rockchip/overlays/rk3588-uart4-m0.dts

@@ -1,0 +1,51 @@
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3399-pwm1-ir-rx.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3399-pwm1-ir-rx.dts"
+/dts-v1/;
+/plugin/;
+
+# 1 "./scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/arm-gic.h" 1
+# 9 "./scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/arm-gic.h"
+# 1 "./scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/irq.h" 1
+# 10 "./scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/arm-gic.h" 2
+# 5 "arch/arm64/boot/dts/rockchip/overlays/rk3399-pwm1-ir-rx.dts" 2
+# 1 "./scripts/dtc/include-prefixes/dt-bindings/input/input.h" 1
+# 13 "./scripts/dtc/include-prefixes/dt-bindings/input/input.h"
+# 1 "./scripts/dtc/include-prefixes/dt-bindings/input/linux-event-codes.h" 1
+# 14 "./scripts/dtc/include-prefixes/dt-bindings/input/input.h" 2
+# 6 "arch/arm64/boot/dts/rockchip/overlays/rk3399-pwm1-ir-rx.dts" 2
+
+/ {
+ metadata {
+  title = "Enable IR receiver on PWM1";
+  compatible = "rockchip,rk3399";
+  category = "misc";
+  exclusive = "GPIO4_C6", "pwm1";
+  description = "Enable IR receiver on PWM1.";
+ };
+};
+
+&pwm1 {
+ compatible = "rockchip,remotectl-pwm";
+ remote_pwm_id = <1>;
+ handle_cpu_id = <1>;
+ remote_support_psci = <1>;
+ status = "okay";
+ pinctrl-0 = <&pwm1_pin>;
+ pinctrl-names = "default";
+ interrupts = <0 61 4 0>;
+ interrupt-parent = <&gic>;
+
+ ir_key1 {
+  rockchip,usercode = <0xff00>;
+  rockchip,key_table =
+   <0xba 0x193>, <0xb9 0x16b>, <0xb8 0x192>,
+   <0xbb 0x19c>, <0xbf 0x197>, <0xbc 164>,
+   <0xf8 114>, <0xea 115>, <0xf6 13>,
+   <0xe9 11>, <0xe6 59>, <0xf2 60>,
+   <0xf3 2>, <0xe7 3>, <0xa1 4>,
+   <0xf7 5>, <0xe3 6>, <0xa5 7>,
+   <0xbd 8>, <0xad 9>, <0xb5 10>;
+ };
+};

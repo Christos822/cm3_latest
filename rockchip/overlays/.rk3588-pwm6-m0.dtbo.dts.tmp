@@ -1,0 +1,27 @@
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3588-pwm6-m0.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3588-pwm6-m0.dts"
+/dts-v1/;
+/plugin/;
+
+/ {
+ metadata {
+  title = "Enable PWM6-M0";
+  compatible = "radxa,rock-5a", "radxa,rock-5c", "radxa,rock-5d", "radxa,cm5-io", "radxa,cm5-rpi-cm4-io";
+  category = "misc";
+  exclusive = "GPIO0_C7";
+  description = "Enable PWM6-M0.
+On Radxa ROCK 5A this is pin 27.
+On Radxa ROCK 5C this is pin 27.
+On Radxa ROCK 5D this is pin 27.
+On Radxa CM5 IO this is pin 31.
+On Radxa CM5 RPI CM4 IO this is pin 5.
+";
+ };
+};
+
+&pwm6 {
+ status = "okay";
+ pinctrl-0 = <&pwm6m0_pins>;
+};

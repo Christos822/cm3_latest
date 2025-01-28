@@ -1,0 +1,22 @@
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3588-i2c1-m4.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3588-i2c1-m4.dts"
+/dts-v1/;
+/plugin/;
+
+/ {
+ metadata {
+  title = "Enable I2C1-M4";
+  compatible = "radxa,nx5-io";
+  category = "misc";
+  exclusive = "GPIO1_D2", "GPIO1_D3";
+  description = "Enable I2C1-M4.
+On Radxa NX5 IO this is SDA pin 18 & SCL pin 13.";
+ };
+};
+
+&i2c1 {
+ status = "okay";
+ pinctrl-0 = <&i2c1m4_xfer>;
+};

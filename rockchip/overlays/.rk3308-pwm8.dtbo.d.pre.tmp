@@ -1,0 +1,1 @@
+rk3308-pwm8.o: arch/arm64/boot/dts/rockchip/overlays/rk3308-pwm8.dts

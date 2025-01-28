@@ -1,0 +1,6 @@
+rock-5a-radxa-display-10hd.o: \
+ arch/arm64/boot/dts/rockchip/overlays/rock-5a-radxa-display-10hd.dts \
+ scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/irq.h \
+ scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h \
+ scripts/dtc/include-prefixes/dt-bindings/pinctrl/rockchip.h \
+ scripts/dtc/include-prefixes/dt-bindings/pwm/pwm.h

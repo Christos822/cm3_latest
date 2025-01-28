@@ -1,0 +1,25 @@
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rock-3a-sata2.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rock-3a-sata2.dts"
+
+/dts-v1/;
+/plugin/;
+
+/ {
+ metadata {
+  title = "Enable SATA2";
+  compatible = "radxa,rock-3a-pcie";
+  category = "misc";
+  description = "Enable SATA2.
+When SATA2 is enabled, PCIe cannot be enabled on the same port.";
+ };
+};
+
+&pcie2x1 {
+ status = "disabled";
+};
+
+&sata2 {
+ status = "okay";
+};

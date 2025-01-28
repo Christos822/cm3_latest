@@ -1,0 +1,22 @@
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3328-uart1.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3328-uart1.dts"
+/dts-v1/;
+/plugin/;
+
+/ {
+ metadata {
+  title = "Enable UART1";
+  compatible = "rockchip,rk3328";
+  category = "misc";
+  exclusive = "GPIO3_A4", "GPIO3_A5";
+  description = "Enable UART1";
+ };
+};
+
+&uart1 {
+ status = "okay";
+ pinctrl-names = "default";
+ pinctrl-0 = <&uart1_xfer &uart1_cts &uart1_rts>;
+};

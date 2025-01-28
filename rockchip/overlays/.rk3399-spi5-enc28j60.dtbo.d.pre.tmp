@@ -1,0 +1,5 @@
+rk3399-spi5-enc28j60.o: \
+ arch/arm64/boot/dts/rockchip/overlays/rk3399-spi5-enc28j60.dts \
+ scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h \
+ scripts/dtc/include-prefixes/dt-bindings/pinctrl/rockchip.h \
+ scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/irq.h

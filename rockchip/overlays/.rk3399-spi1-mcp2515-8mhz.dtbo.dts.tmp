@@ -1,0 +1,60 @@
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3399-spi1-mcp2515-8mhz.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3399-spi1-mcp2515-8mhz.dts"
+/dts-v1/;
+/plugin/;
+
+# 1 "./scripts/dtc/include-prefixes/dt-bindings/pinctrl/rockchip.h" 1
+# 5 "arch/arm64/boot/dts/rockchip/overlays/rk3399-spi1-mcp2515-8mhz.dts" 2
+# 1 "./scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/irq.h" 1
+# 6 "arch/arm64/boot/dts/rockchip/overlays/rk3399-spi1-mcp2515-8mhz.dts" 2
+
+/ {
+ metadata {
+  title = "Enable MCP2515 with 8MHz external clock on SPI1";
+  compatible = "radxa,rock-4c-plus";
+  category = "misc";
+  exclusive = "GPIO1_B0", "GPIO1_A7", "GPIO1_B1", "GPIO1_B2", "GPIO4_D5";
+  description = "Provide support for Microchip MCP2515 SPI CAN controller.
+Assumes 8MHz external clock.
+Uses Pin 22 (GPIO4_D5) for INT.";
+ };
+};
+
+&pinctrl {
+ mcp2515_int_pins {
+  mcp2515_int_pins: mcp2515_int_pin {
+   rockchip,pins = <4 29 0 &pcfg_pull_none>;
+  };
+ };
+};
+
+&{/} {
+ can_mcp2515_osc: can-mcp2515-osc {
+  compatible = "fixed-clock";
+  clock-frequency = <12000000>;
+  #clock-cells = <0>;
+ };
+};
+
+&spi1 {
+ status = "okay";
+ max-freq = <10000000>;
+ #address-cells = <1>;
+ #size-cells = <0>;
+
+ can_mcp2515: can-mcp2515@0 {
+  status = "okay";
+  compatible = "microchip,mcp2515";
+  reg = <0>;
+  interrupt-parent = <&gpio4>;
+  interrupts = <29 2>;
+  spi-max-frequency = <10000000>;
+  clocks = <&can_mcp2515_osc>;
+  vdd-supply = <&vcc3v3_sys>;
+  xceiver-supply = <&vcc3v3_sys>;
+  pinctrl-names = "default";
+  pinctrl-0 = <&mcp2515_int_pins>;
+ };
+};

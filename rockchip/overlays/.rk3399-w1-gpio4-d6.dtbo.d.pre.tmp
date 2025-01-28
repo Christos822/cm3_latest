@@ -1,0 +1,4 @@
+rk3399-w1-gpio4-d6.o: \
+ arch/arm64/boot/dts/rockchip/overlays/rk3399-w1-gpio4-d6.dts \
+ scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h \
+ scripts/dtc/include-prefixes/dt-bindings/pinctrl/rockchip.h

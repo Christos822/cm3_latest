@@ -1,0 +1,4 @@
+rock-3ab-max98357a.o: \
+ arch/arm64/boot/dts/rockchip/overlays/rock-3ab-max98357a.dts \
+ scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h \
+ scripts/dtc/include-prefixes/dt-bindings/pinctrl/rockchip.h

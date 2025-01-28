@@ -1,0 +1,4 @@
+rk3588-disable-fiq-debugger.o: \
+ arch/arm64/boot/dts/rockchip/overlays/rk3588-disable-fiq-debugger.dts \
+ arch/arm64/boot/dts/rockchip/overlays/rk3568-disable-fiq-debugger.dts \
+ arch/arm64/boot/dts/rockchip/overlays/rk3399-disable-fiq-debugger.dts

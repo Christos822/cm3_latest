@@ -1,0 +1,27 @@
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3568-npu-disable.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3568-npu-disable.dts"
+/dts-v1/;
+/plugin/;
+
+/ {
+ metadata {
+  title = "Disable NPU";
+  compatible = "unknown";
+  category = "misc";
+  description = "Disable NPU.";
+ };
+};
+
+&bus_npu {
+ status = "disabled";
+};
+
+&rknpu {
+ status = "disabled";
+};
+
+&rknpu_mmu {
+ status = "disabled";
+};

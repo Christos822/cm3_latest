@@ -1,0 +1,6 @@
+rk3399-pwm1-ir-rx.o: \
+ arch/arm64/boot/dts/rockchip/overlays/rk3399-pwm1-ir-rx.dts \
+ scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/arm-gic.h \
+ scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/irq.h \
+ scripts/dtc/include-prefixes/dt-bindings/input/input.h \
+ scripts/dtc/include-prefixes/dt-bindings/input/linux-event-codes.h

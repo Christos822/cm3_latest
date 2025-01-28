@@ -1,0 +1,2 @@
+rk3399-opp-2400.o: \
+ arch/arm64/boot/dts/rockchip/overlays/rk3399-opp-2400.dts

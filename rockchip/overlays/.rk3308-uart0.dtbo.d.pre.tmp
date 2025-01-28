@@ -1,0 +1,1 @@
+rk3308-uart0.o: arch/arm64/boot/dts/rockchip/overlays/rk3308-uart0.dts

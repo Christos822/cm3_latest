@@ -1,0 +1,110 @@
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3588-spi0-m1-cs0-waveshare35b.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3588-spi0-m1-cs0-waveshare35b.dts"
+# 1 "arch/arm64/boot/dts/rockchip/overlays/rk3588-spi0-m1-cs0-waveshare35.dts" 1
+
+# 1 "arch/arm64/boot/dts/rockchip/overlays/waveshare35-lcd.dtsi" 1
+
+
+
+# 1 "./scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h" 1
+# 5 "arch/arm64/boot/dts/rockchip/overlays/waveshare35-lcd.dtsi" 2
+# 1 "./scripts/dtc/include-prefixes/dt-bindings/pinctrl/rockchip.h" 1
+# 6 "arch/arm64/boot/dts/rockchip/overlays/waveshare35-lcd.dtsi" 2
+# 1 "./scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/irq.h" 1
+# 7 "arch/arm64/boot/dts/rockchip/overlays/waveshare35-lcd.dtsi" 2
+
+/dts-v1/;
+/plugin/;
+
+
+
+
+
+&spi0 {
+ status = "okay";
+ #address-cells = <1>;
+ #size-cells = <0>;
+
+ ili9486: ili9486@0 {
+  compatible = "ilitek,ili9486";
+  reg = <0>;
+  spi-max-frequency = <16000000>;
+  txbuflen = <32768>;
+  rotate = <90>;
+  bgr = <0>;
+  fps = <30>;
+  buswidth = <8>;
+  regwidth = <16>;
+  debug = <0>;
+ };
+
+ ads7846: ads7846@1 {
+  compatible = "ti,ads7846";
+  status = "okay";
+  reg = <1>;
+  id = <1>;
+  spi-max-frequency = <2000000>;
+  ti,x-plate-ohms = /bits/ 16 <60>;
+  ti,pressure-max = /bits/ 16 <255>;
+  ti,swap-xy = <0>;
+  ti,invert-y = <1>;
+  vcc-supply = <&vcc5v0_sys>;
+ };
+};
+# 3 "arch/arm64/boot/dts/rockchip/overlays/rk3588-spi0-m1-cs0-waveshare35.dts" 2
+
+/ {
+ metadata {
+  title = "Enable Waveshare 3.5inch RPi LCD (C) on SPI0-M0";
+  compatible = "radxa,cm5-io";
+  category = "misc";
+  exclusive = "GPIO1_B1", "GPIO1_D5", "GPIO4_A0", "GPIO4_A1", "GPIO4_A2", "GPIO4_A6", "GPIO4_B2" ;
+  description = "Enable Waveshare 3.5inch RPi LCD (C) on SPI0-M0.
+Touch is temporarily unavailable.";
+ };
+};
+
+&spi0 {
+ pinctrl-names = "default";
+ pinctrl-0 = <&spi0m1_cs0 &spi0m1_pins>;
+};
+
+&ili9486 {
+ reset-gpios = <&gpio1 9 1>;
+ dc-gpios = <&gpio1 29 0>;
+};
+
+&ads7846 {
+ status = "disabled";
+ interrupt-parent = <&gpio4>;
+ interrupts = <6 2>;
+ pendown-gpio = <&gpio4 6 0>;
+};
+# 2 "arch/arm64/boot/dts/rockchip/overlays/rk3588-spi0-m1-cs0-waveshare35b.dts" 2
+
+/ {
+ metadata {
+  title = "Enable Waveshare 3.5 inch Display (B) on SPI0-M0";
+  description = "Enable Waveshare 3.5 inch Display (B) on SPI0-M0.
+Touch is temporarily unavailable.";
+ };
+};
+
+&ili9486 {
+ init = <0x10000b0 0x0
+   0x1000011
+   0x20000ff
+   0x1000021
+   0x100003a 0x55
+   0x10000c2 0x33
+   0x10000c5 0x0 0x1e 0x80
+   0x1000036 0x28
+   0x10000b1 0xb0
+   0x10000e0 0x0 0x13 0x18 0x4 0xf 0x6 0x3a 0x56 0x4d 0x3 0xa 0x6 0x30 0x3e 0xf
+   0x10000e1 0x0 0x13 0x18 0x1 0x11 0x6 0x38 0x34 0x4d 0x6 0xd 0xb 0x31 0x37 0xf
+   0x1000011
+   0x20000ff
+   0x1000029>;
+};

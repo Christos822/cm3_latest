@@ -1,0 +1,1 @@
+arch/arm64/boot/dts/rockchip/overlays/rk3588-dwc3-peripheral.dtbo: arch/arm64/boot/dts/rockchip/overlays/.rk3588-dwc3-peripheral.dtbo.dts.tmp

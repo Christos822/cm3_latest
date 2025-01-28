@@ -1,0 +1,2 @@
+rock-5a-spi-flash.o: \
+ arch/arm64/boot/dts/rockchip/overlays/rock-5a-spi-flash.dts

@@ -1,0 +1,1 @@
+arch/arm64/boot/dts/rockchip/overlays/rk3588-spi1-m1-cs1-spidev.dtbo: arch/arm64/boot/dts/rockchip/overlays/.rk3588-spi1-m1-cs1-spidev.dtbo.dts.tmp

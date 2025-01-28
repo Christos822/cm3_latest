@@ -1,0 +1,20 @@
+# 1 "arch/arm64/boot/dts/rockchip/overlays/radxa-cm3-rpi-cm4-io-disable-emc2301.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "arch/arm64/boot/dts/rockchip/overlays/radxa-cm3-rpi-cm4-io-disable-emc2301.dts"
+/dts-v1/;
+/plugin/;
+
+/ {
+ metadata {
+  title = "Disable EMC2301 PWM fan controller";
+  compatible = "radxa,cm3-rpi-cm4-io";
+  category = "misc";
+  exclusive = "emc2301";
+  description = "Disable EMC2301 PWM fan controller.";
+ };
+};
+
+&emc2301 {
+ status = "disabled";
+};
