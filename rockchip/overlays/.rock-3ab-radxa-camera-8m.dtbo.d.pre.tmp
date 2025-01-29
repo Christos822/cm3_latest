@@ -1,4 +1,0 @@
-rock-3ab-radxa-camera-8m.o: \
- arch/arm64/boot/dts/rockchip/overlays/rock-3ab-radxa-camera-8m.dts \
- scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h \
- scripts/dtc/include-prefixes/dt-bindings/pinctrl/rockchip.h

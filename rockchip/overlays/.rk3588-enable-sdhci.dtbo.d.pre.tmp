@@ -1,2 +1,0 @@
-rk3588-enable-sdhci.o: \
- arch/arm64/boot/dts/rockchip/overlays/rk3588-enable-sdhci.dts

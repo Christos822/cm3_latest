@@ -1,2 +1,0 @@
-radxa-cm3-rpi-cm4-io-disable-emc2301.o: \
- arch/arm64/boot/dts/rockchip/overlays/radxa-cm3-rpi-cm4-io-disable-emc2301.dts

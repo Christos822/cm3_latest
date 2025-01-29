@@ -1,3 +1,0 @@
-rock-5b-dwc3_1-host.o: \
- arch/arm64/boot/dts/rockchip/overlays/rock-5b-dwc3_1-host.dts \
- arch/arm64/boot/dts/rockchip/overlays/rk3588-dwc3_1-host.dts

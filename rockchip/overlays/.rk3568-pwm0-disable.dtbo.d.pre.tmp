@@ -1,3 +1,0 @@
-rk3568-pwm0-disable.o: \
- arch/arm64/boot/dts/rockchip/overlays/rk3568-pwm0-disable.dts \
- scripts/dtc/include-prefixes/dt-bindings/pinctrl/rockchip.h

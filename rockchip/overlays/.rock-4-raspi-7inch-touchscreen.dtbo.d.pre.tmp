@@ -1,2 +1,0 @@
-rock-4-raspi-7inch-touchscreen.o: \
- arch/arm64/boot/dts/rockchip/overlays/rock-4-raspi-7inch-touchscreen.dts

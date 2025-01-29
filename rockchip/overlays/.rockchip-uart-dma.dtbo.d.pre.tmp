@@ -1,2 +1,0 @@
-rockchip-uart-dma.o: \
- arch/arm64/boot/dts/rockchip/overlays/rockchip-uart-dma.dts

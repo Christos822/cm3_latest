@@ -1,2 +1,0 @@
-rock-3b-enable-hdmicec.o: \
- arch/arm64/boot/dts/rockchip/overlays/rock-3b-enable-hdmicec.dts

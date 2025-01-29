@@ -1,2 +1,0 @@
-rk3399-spi1-spidev.o: \
- arch/arm64/boot/dts/rockchip/overlays/rk3399-spi1-spidev.dts

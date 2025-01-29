@@ -1,1 +1,0 @@
-rk3399-uart4.o: arch/arm64/boot/dts/rockchip/overlays/rk3399-uart4.dts

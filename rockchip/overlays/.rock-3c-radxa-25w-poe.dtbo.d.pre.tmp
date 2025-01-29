@@ -1,6 +1,0 @@
-rock-3c-radxa-25w-poe.o: \
- arch/arm64/boot/dts/rockchip/overlays/rock-3c-radxa-25w-poe.dts \
- scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h \
- scripts/dtc/include-prefixes/dt-bindings/pinctrl/rockchip.h \
- scripts/dtc/include-prefixes/dt-bindings/pwm/pwm.h \
- scripts/dtc/include-prefixes/dt-bindings/thermal/thermal.h

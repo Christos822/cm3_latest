@@ -1,4 +1,0 @@
-radxa-nx5-io-okdo-camera-5mp-cam0.o: \
- arch/arm64/boot/dts/rockchip/overlays/radxa-nx5-io-okdo-camera-5mp-cam0.dts \
- scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h \
- scripts/dtc/include-prefixes/dt-bindings/pinctrl/rockchip.h

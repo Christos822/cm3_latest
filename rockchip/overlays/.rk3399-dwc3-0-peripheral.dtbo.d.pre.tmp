@@ -1,2 +1,0 @@
-rk3399-dwc3-0-peripheral.o: \
- arch/arm64/boot/dts/rockchip/overlays/rk3399-dwc3-0-peripheral.dts

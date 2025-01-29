@@ -1,2 +1,0 @@
-radxa-cm3-io-i2c0-hym8563.o: \
- arch/arm64/boot/dts/rockchip/overlays/radxa-cm3-io-i2c0-hym8563.dts

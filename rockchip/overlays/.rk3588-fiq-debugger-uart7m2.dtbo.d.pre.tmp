@@ -1,2 +1,0 @@
-rk3588-fiq-debugger-uart7m2.o: \
- arch/arm64/boot/dts/rockchip/overlays/rk3588-fiq-debugger-uart7m2.dts

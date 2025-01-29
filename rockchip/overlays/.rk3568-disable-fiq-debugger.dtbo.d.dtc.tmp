@@ -1,1 +1,0 @@
-arch/arm64/boot/dts/rockchip/overlays/rk3568-disable-fiq-debugger.dtbo: arch/arm64/boot/dts/rockchip/overlays/.rk3568-disable-fiq-debugger.dtbo.dts.tmp

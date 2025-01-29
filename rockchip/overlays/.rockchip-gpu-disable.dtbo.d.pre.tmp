@@ -1,2 +1,0 @@
-rockchip-gpu-disable.o: \
- arch/arm64/boot/dts/rockchip/overlays/rockchip-gpu-disable.dts

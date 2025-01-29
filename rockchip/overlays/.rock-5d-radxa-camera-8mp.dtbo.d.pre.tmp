@@ -1,5 +1,0 @@
-rock-5d-radxa-camera-8mp.o: \
- arch/arm64/boot/dts/rockchip/overlays/rock-5d-radxa-camera-8mp.dts \
- arch/arm64/boot/dts/rockchip/overlays/rock-5a-radxa-camera-8m-219.dts \
- scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h \
- scripts/dtc/include-prefixes/dt-bindings/pinctrl/rockchip.h

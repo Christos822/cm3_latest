@@ -1,2 +1,0 @@
-rk3588-i2s1-8ch-m0.o: \
- arch/arm64/boot/dts/rockchip/overlays/rk3588-i2s1-8ch-m0.dts

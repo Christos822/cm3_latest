@@ -1,2 +1,0 @@
-rk3308-spi0-spidev.o: \
- arch/arm64/boot/dts/rockchip/overlays/rk3308-spi0-spidev.dts

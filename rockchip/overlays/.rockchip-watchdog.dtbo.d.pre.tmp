@@ -1,2 +1,0 @@
-rockchip-watchdog.o: \
- arch/arm64/boot/dts/rockchip/overlays/rockchip-watchdog.dts

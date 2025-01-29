@@ -1,2 +1,0 @@
-radxa-cm3-raspcm4io-pcie2x1.o: \
- arch/arm64/boot/dts/rockchip/overlays/radxa-cm3-raspcm4io-pcie2x1.dts
