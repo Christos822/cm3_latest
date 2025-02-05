@@ -280,6 +280,7 @@ kernel/drivers/base/regmap/regmap-mmio.ko
 kernel/drivers/block/loop.ko
 kernel/drivers/block/virtio_blk.ko
 kernel/drivers/block/xen-blkfront.ko
+kernel/drivers/misc/cardreader/rtsx_pci.ko
 kernel/drivers/mfd/cros_ec_dev.ko
 kernel/drivers/mfd/mfd-core.ko
 kernel/drivers/mfd/rk8xx-core.ko
@@ -328,6 +329,7 @@ kernel/drivers/net/phy/phylink.ko
 kernel/drivers/net/phy/libphy.ko
 kernel/drivers/net/phy/fixed_phy.ko
 kernel/drivers/net/phy/micrel.ko
+kernel/drivers/net/phy/realtek.ko
 kernel/drivers/net/phy/rockchip.ko
 kernel/drivers/net/mdio/fwnode_mdio.ko
 kernel/drivers/net/mdio/of_mdio.ko
@@ -448,6 +450,7 @@ kernel/drivers/mmc/host/dw_mmc-pltfm.ko
 kernel/drivers/mmc/host/dw_mmc-exynos.ko
 kernel/drivers/mmc/host/dw_mmc-k3.ko
 kernel/drivers/mmc/host/dw_mmc-rockchip.ko
+kernel/drivers/mmc/host/rtsx_pci_sdmmc.ko
 kernel/drivers/mmc/host/sdhci-pltfm.ko
 kernel/drivers/mmc/host/sdhci-cadence.ko
 kernel/drivers/mmc/host/sdhci-of-arasan.ko
@@ -502,22 +505,9 @@ kernel/net/802/stp.ko
 kernel/net/802/garp.ko
 kernel/net/802/mrp.ko
 kernel/net/netfilter/nfnetlink.ko
-kernel/net/netfilter/nfnetlink_hook.ko
 kernel/net/netfilter/nf_conntrack.ko
-kernel/net/netfilter/nf_log_syslog.ko
 kernel/net/netfilter/nf_tables.ko
-kernel/net/netfilter/nft_fib.ko
-kernel/net/netfilter/x_tables.ko
-kernel/net/netfilter/xt_tcpudp.ko
-kernel/net/netfilter/ipset/ip_set.ko
-kernel/net/netfilter/ipvs/ip_vs.ko
 kernel/net/ipv4/netfilter/nf_defrag_ipv4.ko
-kernel/net/ipv4/netfilter/nf_socket_ipv4.ko
-kernel/net/ipv4/netfilter/nf_tproxy_ipv4.ko
-kernel/net/ipv4/netfilter/nf_reject_ipv4.ko
-kernel/net/ipv4/netfilter/nft_fib_ipv4.ko
-kernel/net/ipv4/netfilter/nft_dup_ipv4.ko
-kernel/net/ipv4/netfilter/nf_dup_ipv4.ko
 kernel/net/ipv4/tcp_cubic.ko
 kernel/net/ipv4/tcp_sigpool.ko
 kernel/net/ipv6/ipv6.ko
