@@ -280,7 +280,6 @@ kernel/drivers/base/regmap/regmap-mmio.ko
 kernel/drivers/block/loop.ko
 kernel/drivers/block/virtio_blk.ko
 kernel/drivers/block/xen-blkfront.ko
-kernel/drivers/misc/cardreader/rtsx_pci.ko
 kernel/drivers/mfd/cros_ec_dev.ko
 kernel/drivers/mfd/mfd-core.ko
 kernel/drivers/mfd/rk8xx-core.ko
@@ -329,7 +328,6 @@ kernel/drivers/net/phy/phylink.ko
 kernel/drivers/net/phy/libphy.ko
 kernel/drivers/net/phy/fixed_phy.ko
 kernel/drivers/net/phy/micrel.ko
-kernel/drivers/net/phy/realtek.ko
 kernel/drivers/net/phy/rockchip.ko
 kernel/drivers/net/mdio/fwnode_mdio.ko
 kernel/drivers/net/mdio/of_mdio.ko
@@ -357,6 +355,8 @@ kernel/drivers/net/ethernet/intel/igb/igb.ko
 kernel/drivers/net/ethernet/intel/igbvf/igbvf.ko
 kernel/drivers/net/ethernet/marvell/mvmdio.ko
 kernel/drivers/net/ethernet/marvell/sky2.ko
+kernel/drivers/net/ethernet/mellanox/mlxsw/mlxsw_core.ko
+kernel/drivers/net/ethernet/mellanox/mlxfw/mlxfw.ko
 kernel/drivers/net/ethernet/smsc/smc91x.ko
 kernel/drivers/net/ethernet/smsc/smsc911x.ko
 kernel/drivers/net/wireless/uwe5622/unisocwcn/uwe5622_bsp_sdio.ko
@@ -450,7 +450,6 @@ kernel/drivers/mmc/host/dw_mmc-pltfm.ko
 kernel/drivers/mmc/host/dw_mmc-exynos.ko
 kernel/drivers/mmc/host/dw_mmc-k3.ko
 kernel/drivers/mmc/host/dw_mmc-rockchip.ko
-kernel/drivers/mmc/host/rtsx_pci_sdmmc.ko
 kernel/drivers/mmc/host/sdhci-pltfm.ko
 kernel/drivers/mmc/host/sdhci-cadence.ko
 kernel/drivers/mmc/host/sdhci-of-arasan.ko
@@ -507,6 +506,8 @@ kernel/net/802/mrp.ko
 kernel/net/netfilter/nfnetlink.ko
 kernel/net/netfilter/nf_conntrack.ko
 kernel/net/netfilter/nf_tables.ko
+kernel/net/netfilter/x_tables.ko
+kernel/net/netfilter/xt_tcpudp.ko
 kernel/net/ipv4/netfilter/nf_defrag_ipv4.ko
 kernel/net/ipv4/tcp_cubic.ko
 kernel/net/ipv4/tcp_sigpool.ko
@@ -515,7 +516,6 @@ kernel/net/ipv6/netfilter/nf_defrag_ipv6.ko
 kernel/net/packet/af_packet.ko
 kernel/net/bridge/bridge.ko
 kernel/net/bridge/br_netfilter.ko
-kernel/net/bridge/netfilter/nf_conntrack_bridge.ko
 kernel/net/8021q/8021q.ko
 kernel/net/dns_resolver/dns_resolver.ko
 kernel/virt/lib/irqbypass.ko
