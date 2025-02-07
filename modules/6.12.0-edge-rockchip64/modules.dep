@@ -633,11 +633,9 @@ kernel/drivers/net/phy/bcm7xxx.ko: kernel/drivers/net/phy/bcm-phy-lib.ko
 kernel/drivers/net/phy/bcm84881.ko:
 kernel/drivers/net/phy/bcm87xx.ko:
 kernel/drivers/net/phy/bcm-phy-lib.ko:
-kernel/drivers/net/phy/bcm-phy-ptp.ko: kernel/drivers/net/phy/bcm-phy-lib.ko
-kernel/drivers/net/phy/broadcom.ko: kernel/drivers/net/phy/bcm-phy-ptp.ko kernel/drivers/net/phy/bcm-phy-lib.ko
+kernel/drivers/net/phy/broadcom.ko: kernel/drivers/net/phy/bcm-phy-lib.ko
 kernel/drivers/net/phy/cicada.ko:
 kernel/drivers/net/phy/davicom.ko:
-kernel/drivers/net/phy/dp83640.ko:
 kernel/drivers/net/phy/dp83848.ko:
 kernel/drivers/net/phy/dp83869.ko:
 kernel/drivers/net/phy/dp83tc811.ko:
@@ -663,45 +661,11 @@ kernel/drivers/net/mdio/mdio-ipq8064.ko:
 kernel/drivers/net/mdio/mdio-mscc-miim.ko:
 kernel/drivers/net/mdio/mdio-mvusb.ko:
 kernel/drivers/net/mdio/mdio-mux-multiplexer.ko: kernel/drivers/mux/mux-core.ko
-kernel/drivers/net/pcs/pcs-mtk-lynxi.ko:
 kernel/drivers/net/team/team_mode_broadcast.ko:
 kernel/drivers/net/team/team_mode_roundrobin.ko:
 kernel/drivers/net/team/team_mode_random.ko:
 kernel/drivers/net/team/team_mode_activebackup.ko:
 kernel/drivers/net/team/team_mode_loadbalance.ko:
-kernel/drivers/net/dsa/b53/b53_common.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/b53/b53_spi.ko: kernel/drivers/net/dsa/b53/b53_common.ko kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/b53/b53_mdio.ko: kernel/drivers/net/dsa/b53/b53_common.ko kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/b53/b53_mmap.ko: kernel/drivers/net/dsa/b53/b53_common.ko kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/b53/b53_srab.ko: kernel/drivers/net/dsa/b53/b53_serdes.ko kernel/drivers/net/dsa/b53/b53_common.ko kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/b53/b53_serdes.ko:
-kernel/drivers/net/dsa/hirschmann/hellcreek_sw.ko: kernel/net/sched/sch_taprio.ko kernel/net/sched/sch_mqprio_lib.ko kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/microchip/ksz_switch.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/microchip/ksz9477_i2c.ko: kernel/drivers/net/dsa/microchip/ksz_switch.ko kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/microchip/ksz8863_smi.ko: kernel/drivers/net/dsa/microchip/ksz_switch.ko kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/mv88e6xxx/mv88e6xxx.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/qca/ar9331.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/qca/qca8k.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/realtek/realtek_dsa.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/realtek/rtl8366.ko: kernel/drivers/net/dsa/realtek/realtek_dsa.ko kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/realtek/rtl8365mb.ko: kernel/drivers/net/dsa/realtek/realtek_dsa.ko kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/sja1105/sja1105.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/xrs700x/xrs700x.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/xrs700x/xrs700x_i2c.ko: kernel/drivers/net/dsa/xrs700x/xrs700x.ko kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/xrs700x/xrs700x_mdio.ko: kernel/drivers/net/dsa/xrs700x/xrs700x.ko kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/bcm-sf2.ko: kernel/drivers/net/dsa/b53/b53_common.ko kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/dsa_loop.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/lantiq_gswip.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/mt7530.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/mt7530-mdio.ko: kernel/drivers/net/pcs/pcs-mtk-lynxi.ko kernel/drivers/net/dsa/mt7530.ko kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/mt7530-mmio.ko: kernel/drivers/net/dsa/mt7530.ko kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/mv88e6060.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/lan9303-core.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/lan9303_i2c.ko: kernel/drivers/net/dsa/lan9303-core.ko kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/lan9303_mdio.ko: kernel/drivers/net/dsa/lan9303-core.ko kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/vitesse-vsc73xx-core.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/vitesse-vsc73xx-platform.ko: kernel/drivers/net/dsa/vitesse-vsc73xx-core.ko kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/drivers/net/dsa/vitesse-vsc73xx-spi.ko: kernel/drivers/net/dsa/vitesse-vsc73xx-core.ko kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
 kernel/drivers/net/ethernet/aquantia/atlantic/atlantic.ko:
 kernel/drivers/net/ethernet/asix/ax88796c.ko:
 kernel/drivers/net/ethernet/atheros/atlx/atl1.ko:
@@ -715,7 +679,7 @@ kernel/drivers/net/ethernet/broadcom/bnx2.ko:
 kernel/drivers/net/ethernet/broadcom/cnic.ko: kernel/drivers/uio/uio.ko
 kernel/drivers/net/ethernet/broadcom/bnx2x/bnx2x.ko:
 kernel/drivers/net/ethernet/broadcom/tg3.ko:
-kernel/drivers/net/ethernet/broadcom/bcmsysport.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
+kernel/drivers/net/ethernet/broadcom/bcmsysport.ko:
 kernel/drivers/net/ethernet/broadcom/bnxt/bnxt_en.ko:
 kernel/drivers/net/ethernet/brocade/bna/bna.ko:
 kernel/drivers/net/ethernet/dlink/dl2k.ko:
@@ -910,7 +874,6 @@ kernel/drivers/net/usb/zaurus.ko: kernel/drivers/net/usb/cdc_ether.ko kernel/dri
 kernel/drivers/net/usb/mcs7830.ko: kernel/drivers/net/usb/usbnet.ko
 kernel/drivers/net/usb/usbnet.ko:
 kernel/drivers/net/usb/int51x1.ko: kernel/drivers/net/usb/usbnet.ko
-kernel/drivers/net/usb/cdc-phonet.ko: kernel/net/phonet/phonet.ko
 kernel/drivers/net/usb/kalmia.ko: kernel/drivers/net/usb/usbnet.ko
 kernel/drivers/net/usb/ipheth.ko:
 kernel/drivers/net/usb/sierra_net.ko: kernel/drivers/net/usb/usbnet.ko
@@ -1055,7 +1018,6 @@ kernel/drivers/usb/gadget/function/usb_f_obex.ko: kernel/drivers/usb/gadget/libc
 kernel/drivers/usb/gadget/function/u_ether.ko: kernel/drivers/usb/gadget/libcomposite.ko
 kernel/drivers/usb/gadget/function/usb_f_ncm.ko: kernel/drivers/usb/gadget/function/u_ether.ko kernel/drivers/usb/gadget/libcomposite.ko
 kernel/drivers/usb/gadget/function/usb_f_ecm.ko: kernel/drivers/usb/gadget/function/u_ether.ko kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/function/usb_f_phonet.ko: kernel/drivers/usb/gadget/function/u_ether.ko kernel/drivers/usb/gadget/libcomposite.ko kernel/net/phonet/phonet.ko
 kernel/drivers/usb/gadget/function/usb_f_eem.ko: kernel/drivers/usb/gadget/function/u_ether.ko kernel/drivers/usb/gadget/libcomposite.ko
 kernel/drivers/usb/gadget/function/usb_f_ecm_subset.ko: kernel/drivers/usb/gadget/function/u_ether.ko kernel/drivers/usb/gadget/libcomposite.ko
 kernel/drivers/usb/gadget/function/usb_f_rndis.ko: kernel/drivers/usb/gadget/function/u_ether.ko kernel/drivers/usb/gadget/libcomposite.ko
@@ -1081,7 +1043,6 @@ kernel/drivers/usb/gadget/legacy/g_midi.ko: kernel/drivers/usb/gadget/libcomposi
 kernel/drivers/usb/gadget/legacy/g_cdc.ko: kernel/drivers/usb/gadget/function/u_ether.ko kernel/drivers/usb/gadget/libcomposite.ko
 kernel/drivers/usb/gadget/legacy/g_hid.ko: kernel/drivers/usb/gadget/libcomposite.ko
 kernel/drivers/usb/gadget/legacy/g_multi.ko: kernel/drivers/usb/gadget/function/usb_f_mass_storage.ko kernel/drivers/usb/gadget/function/usb_f_rndis.ko kernel/drivers/usb/gadget/function/u_ether.ko kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/legacy/g_nokia.ko: kernel/drivers/usb/gadget/function/usb_f_mass_storage.ko kernel/drivers/usb/gadget/libcomposite.ko
 kernel/drivers/usb/gadget/legacy/g_webcam.ko: kernel/drivers/usb/gadget/libcomposite.ko
 kernel/drivers/usb/gadget/legacy/g_ncm.ko: kernel/drivers/usb/gadget/function/u_ether.ko kernel/drivers/usb/gadget/libcomposite.ko
 kernel/drivers/usb/gadget/legacy/g_acm_ms.ko: kernel/drivers/usb/gadget/function/usb_f_mass_storage.ko kernel/drivers/usb/gadget/libcomposite.ko
@@ -1880,7 +1841,6 @@ kernel/drivers/media/radio/radio-mr800.ko: kernel/drivers/media/v4l2-core/videod
 kernel/drivers/media/radio/radio-raremono.ko: kernel/drivers/media/v4l2-core/videodev.ko kernel/drivers/media/mc/mc.ko
 kernel/drivers/pps/clients/pps-ldisc.ko:
 kernel/drivers/pps/clients/pps-gpio.ko:
-kernel/drivers/ptp/ptp_ines.ko:
 kernel/drivers/ptp/ptp_kvm.ko:
 kernel/drivers/ptp/ptp_clockmatrix.ko:
 kernel/drivers/ptp/ptp_idt82p33.ko:
@@ -2978,8 +2938,6 @@ kernel/sound/xen/snd_xen_front.ko: kernel/sound/core/snd-pcm.ko kernel/sound/cor
 kernel/sound/virtio/virtio_snd.ko: kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
 kernel/sound/ac97_bus.ko:
 kernel/net/core/dev_addr_lists_test.ko: kernel/lib/kunit/kunit.ko
-kernel/net/core/pktgen.ko:
-kernel/net/llc/llc2.ko:
 kernel/net/sched/act_police.ko:
 kernel/net/sched/act_gact.ko:
 kernel/net/sched/act_mirred.ko:
@@ -3000,7 +2958,7 @@ kernel/net/sched/act_meta_mark.ko: kernel/net/sched/act_ife.ko kernel/net/ife/if
 kernel/net/sched/act_meta_skbprio.ko: kernel/net/sched/act_ife.ko kernel/net/ife/ife.ko
 kernel/net/sched/act_meta_skbtcindex.ko: kernel/net/sched/act_ife.ko kernel/net/ife/ife.ko
 kernel/net/sched/act_tunnel_key.ko:
-kernel/net/sched/act_ct.ko:
+kernel/net/sched/act_ct.ko: kernel/net/netfilter/nf_flow_table.ko
 kernel/net/sched/sch_htb.ko:
 kernel/net/sched/sch_hfsc.ko:
 kernel/net/sched/sch_red.ko:
@@ -3065,37 +3023,51 @@ kernel/net/netfilter/ipvs/ip_vs_nq.ko:
 kernel/net/netfilter/ipvs/ip_vs_twos.ko:
 kernel/net/netfilter/ipvs/ip_vs_ftp.ko:
 kernel/net/netfilter/ipvs/ip_vs_pe_sip.ko:
-kernel/net/netfilter/nfnetlink_hook.ko:
-kernel/net/netfilter/nft_compat.ko:
-kernel/net/netfilter/nft_flow_offload.ko:
-kernel/net/netfilter/nft_fib_inet.ko: kernel/net/ipv4/netfilter/nft_fib_ipv4.ko
-kernel/net/netfilter/nft_fib_netdev.ko: kernel/net/ipv4/netfilter/nft_fib_ipv4.ko
-kernel/net/netfilter/nf_flow_table_inet.ko:
-kernel/net/netfilter/xt_set.ko:
-kernel/net/netfilter/xt_CHECKSUM.ko:
-kernel/net/netfilter/xt_CT.ko:
-kernel/net/netfilter/xt_DSCP.ko:
+kernel/net/netfilter/nfnetlink_cthelper.ko:
+kernel/net/netfilter/nf_conntrack_amanda.ko:
+kernel/net/netfilter/nf_conntrack_h323.ko:
+kernel/net/netfilter/nf_conntrack_irc.ko:
+kernel/net/netfilter/nf_nat_amanda.ko: kernel/net/netfilter/nf_conntrack_amanda.ko
+kernel/net/netfilter/nf_nat_irc.ko: kernel/net/netfilter/nf_conntrack_irc.ko
+kernel/net/netfilter/nft_connlimit.ko:
+kernel/net/netfilter/nft_flow_offload.ko: kernel/net/netfilter/nf_flow_table.ko
+kernel/net/netfilter/nft_queue.ko:
+kernel/net/netfilter/nft_reject.ko:
+kernel/net/netfilter/nft_reject_inet.ko: kernel/net/ipv6/netfilter/nf_reject_ipv6.ko kernel/net/netfilter/nft_reject.ko
+kernel/net/netfilter/nft_tunnel.ko:
+kernel/net/netfilter/nft_fib.ko:
+kernel/net/netfilter/nft_socket.ko: kernel/net/ipv4/netfilter/nf_socket_ipv4.ko kernel/net/ipv6/netfilter/nf_socket_ipv6.ko
+kernel/net/netfilter/nft_osf.ko:
+kernel/net/netfilter/nft_tproxy.ko: kernel/net/ipv6/netfilter/nf_tproxy_ipv6.ko kernel/net/ipv4/netfilter/nf_tproxy_ipv4.ko
+kernel/net/netfilter/nft_xfrm.ko:
+kernel/net/netfilter/nf_flow_table.ko:
+kernel/net/netfilter/nf_flow_table_inet.ko: kernel/net/netfilter/nf_flow_table.ko
+kernel/net/netfilter/xt_HL.ko:
 kernel/net/netfilter/xt_HMARK.ko:
-kernel/net/netfilter/xt_TPROXY.ko:
-kernel/net/netfilter/xt_TCPOPTSTRIP.ko:
-kernel/net/netfilter/xt_TEE.ko:
-kernel/net/netfilter/xt_TRACE.ko:
+kernel/net/netfilter/xt_TPROXY.ko: kernel/net/ipv6/netfilter/nf_tproxy_ipv6.ko kernel/net/ipv4/netfilter/nf_tproxy_ipv4.ko
+kernel/net/netfilter/xt_TCPMSS.ko:
+kernel/net/netfilter/xt_TEE.ko: kernel/net/ipv6/netfilter/nf_dup_ipv6.ko kernel/net/ipv4/netfilter/nf_dup_ipv4.ko
 kernel/net/netfilter/xt_hashlimit.ko:
-kernel/net/netfilter/xt_ipvs.ko:
-kernel/net/netfilter/xt_socket.ko:
-kernel/net/ipv4/netfilter/nft_fib_ipv4.ko:
-kernel/net/ipv4/netfilter/nft_dup_ipv4.ko:
-kernel/net/ipv4/ipip.ko: kernel/net/ipv4/tunnel4.ko
-kernel/net/ipv4/fou.ko:
+kernel/net/netfilter/xt_physdev.ko:
+kernel/net/netfilter/xt_socket.ko: kernel/net/ipv4/netfilter/nf_socket_ipv4.ko kernel/net/ipv6/netfilter/nf_socket_ipv6.ko
+kernel/net/ipv4/netfilter/nf_socket_ipv4.ko:
+kernel/net/ipv4/netfilter/nf_tproxy_ipv4.ko:
+kernel/net/ipv4/netfilter/nf_nat_h323.ko: kernel/net/netfilter/nf_conntrack_h323.ko
+kernel/net/ipv4/netfilter/nf_nat_snmp_basic.ko:
+kernel/net/ipv4/netfilter/nft_reject_ipv4.ko: kernel/net/netfilter/nft_reject.ko
+kernel/net/ipv4/netfilter/ipt_rpfilter.ko:
+kernel/net/ipv4/netfilter/ipt_ECN.ko:
+kernel/net/ipv4/netfilter/arp_tables.ko:
+kernel/net/ipv4/netfilter/arpt_mangle.ko:
+kernel/net/ipv4/netfilter/arptable_filter.ko: kernel/net/ipv4/netfilter/arp_tables.ko
+kernel/net/ipv4/netfilter/nf_dup_ipv4.ko:
 kernel/net/ipv4/gre.ko:
 kernel/net/ipv4/ip_gre.ko: kernel/net/ipv4/gre.ko
-kernel/net/ipv4/ip_vti.ko: kernel/net/ipv4/tunnel4.ko
+kernel/net/ipv4/ip_vti.ko:
 kernel/net/ipv4/ah4.ko:
 kernel/net/ipv4/esp4.ko:
-kernel/net/ipv4/esp4_offload.ko: kernel/net/ipv4/esp4.ko
 kernel/net/ipv4/ipcomp.ko: kernel/net/xfrm/xfrm_ipcomp.ko
-kernel/net/ipv4/xfrm4_tunnel.ko: kernel/net/ipv4/tunnel4.ko
-kernel/net/ipv4/tunnel4.ko:
+kernel/net/ipv4/xfrm4_tunnel.ko:
 kernel/net/ipv4/inet_diag.ko:
 kernel/net/ipv4/tcp_diag.ko: kernel/net/ipv4/inet_diag.ko
 kernel/net/ipv4/udp_diag.ko: kernel/net/ipv4/inet_diag.ko
@@ -3115,43 +3087,67 @@ kernel/net/ipv4/tcp_scalable.ko:
 kernel/net/ipv4/tcp_lp.ko:
 kernel/net/ipv4/tcp_yeah.ko: kernel/net/ipv4/tcp_vegas.ko
 kernel/net/ipv4/tcp_illinois.ko:
-kernel/net/xfrm/xfrm_user.ko:
 kernel/net/xfrm/xfrm_ipcomp.ko:
-kernel/net/xfrm/xfrm_interface.ko: kernel/net/ipv6/xfrm6_tunnel.ko kernel/net/ipv6/tunnel6.ko kernel/net/ipv4/tunnel4.ko
+kernel/net/xfrm/xfrm_interface.ko: kernel/net/ipv6/xfrm6_tunnel.ko kernel/net/ipv6/tunnel6.ko
 kernel/net/unix/unix_diag.ko:
+kernel/net/ipv6/netfilter/ip6_tables.ko:
+kernel/net/ipv6/netfilter/ip6table_filter.ko: kernel/net/ipv6/netfilter/ip6_tables.ko
+kernel/net/ipv6/netfilter/ip6table_mangle.ko: kernel/net/ipv6/netfilter/ip6_tables.ko
+kernel/net/ipv6/netfilter/ip6table_raw.ko: kernel/net/ipv6/netfilter/ip6_tables.ko
+kernel/net/ipv6/netfilter/ip6table_security.ko: kernel/net/ipv6/netfilter/ip6_tables.ko
+kernel/net/ipv6/netfilter/ip6table_nat.ko: kernel/net/ipv6/netfilter/ip6_tables.ko
+kernel/net/ipv6/netfilter/nf_socket_ipv6.ko:
+kernel/net/ipv6/netfilter/nf_tproxy_ipv6.ko:
+kernel/net/ipv6/netfilter/nf_reject_ipv6.ko:
+kernel/net/ipv6/netfilter/nf_dup_ipv6.ko:
+kernel/net/ipv6/netfilter/nft_reject_ipv6.ko: kernel/net/ipv6/netfilter/nf_reject_ipv6.ko kernel/net/netfilter/nft_reject.ko
+kernel/net/ipv6/netfilter/nft_dup_ipv6.ko: kernel/net/ipv6/netfilter/nf_dup_ipv6.ko
+kernel/net/ipv6/netfilter/nft_fib_ipv6.ko: kernel/net/netfilter/nft_fib.ko
+kernel/net/ipv6/netfilter/ip6t_ah.ko:
+kernel/net/ipv6/netfilter/ip6t_eui64.ko:
+kernel/net/ipv6/netfilter/ip6t_frag.ko:
+kernel/net/ipv6/netfilter/ip6t_ipv6header.ko:
+kernel/net/ipv6/netfilter/ip6t_mh.ko:
+kernel/net/ipv6/netfilter/ip6t_hbh.ko:
+kernel/net/ipv6/netfilter/ip6t_rpfilter.ko:
+kernel/net/ipv6/netfilter/ip6t_rt.ko:
+kernel/net/ipv6/netfilter/ip6t_NPT.ko:
+kernel/net/ipv6/netfilter/ip6t_REJECT.ko: kernel/net/ipv6/netfilter/nf_reject_ipv6.ko
+kernel/net/ipv6/netfilter/ip6t_SYNPROXY.ko:
 kernel/net/ipv6/ah6.ko:
 kernel/net/ipv6/esp6.ko:
-kernel/net/ipv6/esp6_offload.ko: kernel/net/ipv6/esp6.ko
 kernel/net/ipv6/ipcomp6.ko: kernel/net/ipv6/xfrm6_tunnel.ko kernel/net/ipv6/tunnel6.ko kernel/net/xfrm/xfrm_ipcomp.ko
 kernel/net/ipv6/xfrm6_tunnel.ko: kernel/net/ipv6/tunnel6.ko
 kernel/net/ipv6/tunnel6.ko:
-kernel/net/ipv6/mip6.ko:
 kernel/net/ipv6/ila/ila.ko:
-kernel/net/ipv6/ip6_vti.ko: kernel/net/ipv6/ip6_tunnel.ko kernel/net/ipv6/xfrm6_tunnel.ko kernel/net/ipv6/tunnel6.ko
-kernel/net/ipv6/sit.ko: kernel/net/ipv4/tunnel4.ko
+kernel/net/ipv6/sit.ko:
 kernel/net/ipv6/ip6_tunnel.ko: kernel/net/ipv6/tunnel6.ko
-kernel/net/ipv6/ip6_gre.ko: kernel/net/ipv6/ip6_tunnel.ko kernel/net/ipv6/tunnel6.ko kernel/net/ipv4/gre.ko
-kernel/net/ipv6/fou6.ko: kernel/net/ipv4/fou.ko kernel/net/ipv6/ip6_tunnel.ko kernel/net/ipv6/tunnel6.ko
 kernel/net/packet/af_packet_diag.ko:
-kernel/net/dsa/dsa_core.ko: kernel/net/hsr/hsr.ko
-kernel/net/dsa/tag_ar9331.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/net/dsa/tag_brcm.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/net/dsa/tag_dsa.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/net/dsa/tag_gswip.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/net/dsa/tag_hellcreek.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/net/dsa/tag_ksz.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/net/dsa/tag_lan9303.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/net/dsa/tag_mtk.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/net/dsa/tag_none.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/net/dsa/tag_ocelot.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/net/dsa/tag_ocelot_8021q.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/net/dsa/tag_qca.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/net/dsa/tag_rtl4_a.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/net/dsa/tag_rtl8_4.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/net/dsa/tag_sja1105.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/net/dsa/tag_trailer.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/net/dsa/tag_vsc73xx_8021q.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
-kernel/net/dsa/tag_xrs700x.ko: kernel/net/dsa/dsa_core.ko kernel/net/hsr/hsr.ko
+kernel/net/bridge/netfilter/nft_meta_bridge.ko:
+kernel/net/bridge/netfilter/nft_reject_bridge.ko: kernel/net/ipv6/netfilter/nf_reject_ipv6.ko kernel/net/netfilter/nft_reject.ko
+kernel/net/bridge/netfilter/nf_conntrack_bridge.ko:
+kernel/net/bridge/netfilter/ebtables.ko:
+kernel/net/bridge/netfilter/ebtable_broute.ko: kernel/net/bridge/netfilter/ebtables.ko
+kernel/net/bridge/netfilter/ebtable_filter.ko: kernel/net/bridge/netfilter/ebtables.ko
+kernel/net/bridge/netfilter/ebtable_nat.ko: kernel/net/bridge/netfilter/ebtables.ko
+kernel/net/bridge/netfilter/ebt_802_3.ko:
+kernel/net/bridge/netfilter/ebt_among.ko:
+kernel/net/bridge/netfilter/ebt_arp.ko:
+kernel/net/bridge/netfilter/ebt_ip.ko:
+kernel/net/bridge/netfilter/ebt_ip6.ko:
+kernel/net/bridge/netfilter/ebt_limit.ko:
+kernel/net/bridge/netfilter/ebt_mark_m.ko:
+kernel/net/bridge/netfilter/ebt_pkttype.ko:
+kernel/net/bridge/netfilter/ebt_stp.ko:
+kernel/net/bridge/netfilter/ebt_vlan.ko:
+kernel/net/bridge/netfilter/ebt_arpreply.ko:
+kernel/net/bridge/netfilter/ebt_mark.ko:
+kernel/net/bridge/netfilter/ebt_dnat.ko:
+kernel/net/bridge/netfilter/ebt_redirect.ko:
+kernel/net/bridge/netfilter/ebt_snat.ko:
+kernel/net/bridge/netfilter/ebt_log.ko:
+kernel/net/bridge/netfilter/ebt_nflog.ko:
+kernel/net/8021q/8021q.ko:
 kernel/net/wireless/cfg80211.ko: kernel/net/rfkill/rfkill.ko
 kernel/net/wireless/lib80211.ko:
 kernel/net/wireless/lib80211_crypt_wep.ko: kernel/net/wireless/lib80211.ko kernel/lib/crypto/libarc4.ko
@@ -3160,11 +3156,10 @@ kernel/net/wireless/lib80211_crypt_tkip.ko: kernel/net/wireless/lib80211.ko kern
 kernel/net/mpls/mpls_gso.ko:
 kernel/net/mpls/mpls_router.ko:
 kernel/net/mpls/mpls_iptunnel.ko: kernel/net/mpls/mpls_router.ko
+kernel/net/mptcp/mptcp_diag.ko: kernel/net/ipv4/inet_diag.ko
 kernel/net/tls/tls.ko:
 kernel/net/key/af_key.ko:
 kernel/net/appletalk/appletalk.ko:
-kernel/net/x25/x25.ko:
-kernel/net/lapb/lapb.ko:
 kernel/net/netrom/netrom.ko: kernel/net/ax25/ax25.ko
 kernel/net/rose/rose.ko: kernel/net/ax25/ax25.ko
 kernel/net/ax25/ax25.ko:
@@ -3183,27 +3178,12 @@ kernel/net/sunrpc/auth_gss/auth_rpcgss.ko: kernel/net/sunrpc/sunrpc.ko
 kernel/net/sunrpc/auth_gss/rpcsec_gss_krb5.ko: kernel/net/sunrpc/auth_gss/auth_rpcgss.ko kernel/net/sunrpc/sunrpc.ko
 kernel/net/rxrpc/rxrpc.ko:
 kernel/net/atm/atm.ko:
-kernel/net/atm/clip.ko: kernel/net/atm/atm.ko
-kernel/net/atm/br2684.ko: kernel/net/atm/atm.ko
-kernel/net/atm/lec.ko: kernel/net/atm/atm.ko
-kernel/net/atm/mpoa.ko: kernel/net/atm/atm.ko
 kernel/net/atm/pppoatm.ko: kernel/net/atm/atm.ko kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
 kernel/net/l2tp/l2tp_core.ko:
-kernel/net/l2tp/l2tp_ppp.ko: kernel/net/l2tp/l2tp_netlink.ko kernel/net/l2tp/l2tp_core.ko kernel/drivers/net/ppp/pppox.ko kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
-kernel/net/l2tp/l2tp_ip.ko: kernel/net/l2tp/l2tp_core.ko
-kernel/net/l2tp/l2tp_netlink.ko: kernel/net/l2tp/l2tp_core.ko
-kernel/net/l2tp/l2tp_eth.ko: kernel/net/l2tp/l2tp_netlink.ko kernel/net/l2tp/l2tp_core.ko
-kernel/net/l2tp/l2tp_debugfs.ko: kernel/net/l2tp/l2tp_core.ko
-kernel/net/l2tp/l2tp_ip6.ko: kernel/net/l2tp/l2tp_ip.ko kernel/net/l2tp/l2tp_core.ko
-kernel/net/phonet/phonet.ko:
-kernel/net/phonet/pn_pep.ko: kernel/net/phonet/phonet.ko
+kernel/net/l2tp/l2tp_ppp.ko: kernel/net/l2tp/l2tp_core.ko kernel/drivers/net/ppp/pppox.ko kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
 kernel/net/sctp/sctp.ko:
 kernel/net/sctp/sctp_diag.ko: kernel/net/sctp/sctp.ko kernel/net/ipv4/inet_diag.ko
-kernel/net/rds/rds.ko:
-kernel/net/rds/rds_tcp.ko: kernel/net/rds/rds.ko
 kernel/net/mac80211/mac80211.ko: kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko kernel/lib/crypto/libarc4.ko
-kernel/net/tipc/tipc.ko:
-kernel/net/tipc/tipc_diag.ko: kernel/net/tipc/tipc.ko
 kernel/net/rfkill/rfkill.ko:
 kernel/net/rfkill/rfkill-gpio.ko: kernel/net/rfkill/rfkill.ko
 kernel/net/9p/9pnet.ko: kernel/fs/netfs/netfs.ko
