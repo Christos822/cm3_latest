@@ -173,7 +173,6 @@ alias symbol:iscsi_host_add libiscsi
 alias symbol:ath6kl_hif_rw_comp_handler ath6kl_core
 alias symbol:ceph_find_or_create_string libceph
 alias symbol:wm8731_init snd_soc_wm8731
-alias symbol:can_send can
 alias symbol:ieee802154_unregister_hw mac802154
 alias symbol:ocfs2_cluster_connect ocfs2_stackglue
 alias symbol:snd_soc_get_stream_cpu snd_soc_core
@@ -313,7 +312,6 @@ alias symbol:nf_nat_irc_hook nf_conntrack_irc
 alias symbol:vfio_iommufd_physical_unbind vfio
 alias symbol:w1_remove_master_device wire
 alias symbol:fdomain_create fdomain
-alias symbol:i2c_mux_alloc i2c_mux
 alias symbol:iwl_trans_txq_set_shared_mode iwlwifi
 alias symbol:__tracepoint_ff_layout_write_error nfsv4
 alias symbol:cfg80211_chandef_usable cfg80211
@@ -1779,7 +1777,6 @@ alias symbol:rtsx_pci_read_register rtsx_pci
 alias symbol:cs_dsp_cleanup_debugfs cs_dsp
 alias symbol:mt76_csa_check mt76
 alias symbol:smsc_phy_probe smsc
-alias symbol:can_proto_unregister can
 alias symbol:iwl_free_fw_paging iwlwifi
 alias symbol:rtw_pci_remove rtw88_pci
 alias symbol:__v4l2_async_nf_add_fwnode_remote v4l2_async
@@ -2045,7 +2042,6 @@ alias symbol:nfc_targets_found nfc
 alias symbol:typec_mux_register typec
 alias symbol:ieee80211_scan_completed mac80211
 alias symbol:ssv_devicetype ssv6051
-alias symbol:i2c_mux_del_adapters i2c_mux
 alias symbol:pciserial_remove_ports 8250_pci
 alias symbol:cs_dsp_adsp1_power_up cs_dsp
 alias symbol:hci_release_dev bluetooth
@@ -2386,7 +2382,6 @@ alias symbol:mma9551_set_power_state mma9551_core
 alias symbol:p9_client_create 9pnet
 alias symbol:pcm3168a_remove snd_soc_pcm3168a
 alias symbol:usb_assign_descriptors libcomposite
-alias symbol:can_rx_register can
 alias symbol:ieee802154_hdr_pull ieee802154
 alias symbol:iwl_trans_pcie_remove iwlwifi
 alias symbol:iwl_write32 iwlwifi
@@ -2405,7 +2400,6 @@ alias symbol:dm_register_target dm_mod
 alias symbol:rtllib_wx_get_encode rtllib
 alias symbol:ttm_device_fini ttm
 alias symbol:gether_set_ifname u_ether
-alias symbol:i2c_root_adapter i2c_mux
 alias symbol:mt76_queue_tx_complete mt76
 alias symbol:rtw_phy_load_tables rtw88_core
 alias symbol:usb_power_delivery_unregister typec
@@ -3338,7 +3332,6 @@ alias symbol:ssb_bus_may_powerdown ssb
 alias symbol:taprio_offload_free sch_taprio
 alias symbol:ieee80211_stop_tx_ba_session mac80211
 alias symbol:rc_g_keycode_from_table rc_core
-alias symbol:can_rx_unregister can
 alias symbol:xprt_wait_for_reply_request_def sunrpc
 alias symbol:ieee80211_tdls_oper_request mac80211
 alias symbol:iscsi_tcp_conn_get_stats libiscsi_tcp
@@ -4386,7 +4379,6 @@ alias symbol:v4l2_ctrl_get_int_menu videodev
 alias symbol:v4l2_m2m_poll v4l2_mem2mem
 alias symbol:snd_soc_get_strobe snd_soc_core
 alias symbol:__traceiter_pnfs_mds_fallback_write_done nfsv4
-alias symbol:i2c_mux_add_adapter i2c_mux
 alias symbol:p9_client_fsync 9pnet
 alias symbol:xdr_encode_netobj sunrpc
 alias symbol:__iwl_crit iwlwifi
@@ -5750,7 +5742,6 @@ alias symbol:btmrvl_enable_hs btmrvl
 alias symbol:fxos8700_regmap_config fxos8700_core
 alias symbol:snd_soc_dapm_force_enable_pin snd_soc_core
 alias symbol:vmci_qpair_get_produce_indexes vmw_vmci
-alias symbol:can_sock_destruct can
 alias symbol:gserial_suspend u_serial
 alias symbol:nfc_hci_get_param hci
 alias symbol:smsc_phy_config_init smsc
@@ -5799,7 +5790,6 @@ alias symbol:rtw_dump_fw rtw88_core
 alias symbol:snd_pcm_format_set_silence snd_pcm
 alias symbol:____mt76_poll_msec mt76
 alias symbol:bma400_regmap_config bma400_core
-alias symbol:can_proto_register can
 alias symbol:mma9551_read_version mma9551_core
 alias symbol:nfs_fattr_init nfs
 alias symbol:nvme_fc_register_remoteport nvme_fc

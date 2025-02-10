@@ -395,7 +395,6 @@ kernel/drivers/net/ethernet/marvell/mvmdio.ko
 kernel/drivers/net/ethernet/marvell/sky2.ko
 kernel/drivers/net/ethernet/realtek/8139cp.ko
 kernel/drivers/net/ethernet/realtek/8139too.ko
-kernel/drivers/net/ethernet/realtek/r8169.ko
 kernel/drivers/net/ethernet/realtek/rtase/rtase.ko
 kernel/drivers/net/ethernet/smsc/smc91x.ko
 kernel/drivers/net/ethernet/smsc/smsc911x.ko
@@ -462,6 +461,7 @@ kernel/drivers/rtc/rtc-pl031.ko
 kernel/drivers/rtc/rtc-rk808.ko
 kernel/drivers/i2c/i2c-core.ko
 kernel/drivers/i2c/i2c-dev.ko
+kernel/drivers/i2c/i2c-mux.ko
 kernel/drivers/i2c/algos/i2c-algo-bit.ko
 kernel/drivers/i2c/busses/i2c-designware-core.ko
 kernel/drivers/i2c/busses/i2c-designware-platform.ko
@@ -549,6 +549,8 @@ kernel/net/llc/llc.ko
 kernel/net/802/p8022.ko
 kernel/net/802/psnap.ko
 kernel/net/802/stp.ko
+kernel/net/802/garp.ko
+kernel/net/802/mrp.ko
 kernel/net/netfilter/nfnetlink.ko
 kernel/net/netfilter/nfnetlink_acct.ko
 kernel/net/netfilter/nfnetlink_queue.ko
@@ -681,6 +683,7 @@ kernel/net/ipv4/netfilter/iptable_raw.ko
 kernel/net/ipv4/netfilter/ipt_ah.ko
 kernel/net/ipv4/netfilter/ipt_REJECT.ko
 kernel/net/ipv4/netfilter/ipt_SYNPROXY.ko
+kernel/net/ipv4/tcp_bbr.ko
 kernel/net/ipv4/tcp_cubic.ko
 kernel/net/xfrm/xfrm_algo.ko
 kernel/net/xfrm/xfrm_user.ko
@@ -690,5 +693,11 @@ kernel/net/ipv6/ip6_udp_tunnel.ko
 kernel/net/packet/af_packet.ko
 kernel/net/bridge/bridge.ko
 kernel/net/bridge/br_netfilter.ko
+kernel/net/can/can.ko
+kernel/net/can/can-raw.ko
+kernel/net/can/can-bcm.ko
+kernel/net/can/can-gw.ko
+kernel/net/can/j1939/can-j1939.ko
+kernel/net/8021q/8021q.ko
 kernel/net/dns_resolver/dns_resolver.ko
 kernel/virt/lib/irqbypass.ko
