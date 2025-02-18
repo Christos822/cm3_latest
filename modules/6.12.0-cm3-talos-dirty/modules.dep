@@ -129,6 +129,7 @@ kernel/fs/ocfs2/dlm/ocfs2_dlm.ko: kernel/fs/ocfs2/cluster/ocfs2_nodemanager.ko
 kernel/fs/gfs2/gfs2.ko: kernel/fs/dlm/dlm.ko
 kernel/fs/bcachefs/bcachefs.ko:
 kernel/fs/ceph/ceph.ko: kernel/net/ceph/libceph.ko kernel/fs/netfs/netfs.ko
+kernel/fs/efivarfs/efivarfs.ko:
 kernel/fs/erofs/erofs.ko: kernel/fs/netfs/netfs.ko
 kernel/fs/zonefs/zonefs.ko:
 kernel/crypto/asymmetric_keys/pkcs8_key_parser.ko:

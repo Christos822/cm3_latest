@@ -164,6 +164,7 @@ kernel/lib/digsig.ko
 kernel/lib/asn1_decoder.ko
 kernel/lib/fonts/font.ko
 kernel/lib/oid_registry.ko
+kernel/lib/ucs2_string.ko
 kernel/drivers/bus/arm-cci.ko
 kernel/drivers/bus/vexpress-config.ko
 kernel/drivers/phy/rockchip/phy-rockchip-dp.ko
@@ -462,6 +463,7 @@ kernel/drivers/firmware/arm_scmi/transports/scmi_transport_smc.ko
 kernel/drivers/firmware/arm_scmi/transports/scmi_transport_mailbox.ko
 kernel/drivers/firmware/arm_scmi/scmi-core.ko
 kernel/drivers/firmware/arm_scmi/scmi-module.ko
+kernel/drivers/firmware/efi/efi-pstore.ko
 kernel/drivers/crypto/amlogic/amlogic-gxl-crypto.ko
 kernel/drivers/hid/hid.ko
 kernel/drivers/hid/hid-generic.ko

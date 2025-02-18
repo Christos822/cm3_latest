@@ -121,6 +121,7 @@ alias fs-gfs2meta gfs2
 alias fs-gfs2 gfs2
 alias fs-bcachefs bcachefs
 alias fs-ceph ceph
+alias fs-efivarfs efivarfs
 alias fs-erofs erofs
 alias fs-zonefs zonefs
 alias crypto-ecdsa-generic ecdsa_generic

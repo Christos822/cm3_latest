@@ -1095,6 +1095,7 @@ alias symbol:ocelot_init_timestamp mscc_ocelot_switch_lib
 alias symbol:rpc_delay sunrpc
 alias symbol:dib0090_set_vga dib0090
 alias symbol:iwl_drv_get_fwname_pre iwlwifi
+alias symbol:iwl_uefi_get_step_table iwlwifi
 alias symbol:rt2800_efuse_detect rt2800lib
 alias symbol:ttm_lru_bulk_move_fini ttm
 alias symbol:typec_unregister_cable typec
@@ -1128,6 +1129,7 @@ alias symbol:rpc_find_or_alloc_pipe_dir_object sunrpc
 alias symbol:st_nci_hci_load_session st_nci
 alias symbol:v4l2_i2c_tuner_addrs videodev
 alias symbol:ath9k_cmn_get_channel ath9k_common
+alias symbol:iwl_uefi_get_sgom_table iwlwifi
 alias symbol:media_graph_walk_cleanup mc
 alias symbol:nfs_may_open nfs
 alias symbol:wm_adsp_compr_pointer snd_soc_wm_adsp
@@ -2509,6 +2511,7 @@ alias symbol:mt7921_mcu_parse_response mt7921_common
 alias symbol:nfc_se_transaction nfc
 alias symbol:typec_register_port typec
 alias symbol:rpc_calc_rto sunrpc
+alias symbol:snd_soc_set_dmi_name snd_soc_core
 alias symbol:sunrpc_cache_unregister_pipefs sunrpc
 alias symbol:cx231xx_uninit_vbi_isoc cx231xx
 alias symbol:eeprom_93cx6_write eeprom_93cx6
@@ -4772,6 +4775,7 @@ alias symbol:libipw_get_geo libipw
 alias symbol:vfio_pci_core_ioread32 vfio_pci_core
 alias symbol:at803x_get_wol qcom_phy_lib
 alias symbol:dp_altmode_probe typec_displayport
+alias symbol:iwl_uefi_get_uats_table iwlwifi
 alias symbol:md_check_no_bitmap md_mod
 alias symbol:wlcore_boot_upload_nvs wlcore
 alias symbol:__SCK__tp_func_iscsi_dbg_eh scsi_transport_iscsi
@@ -5076,6 +5080,7 @@ alias symbol:at803x_read_specific_status qcom_phy_lib
 alias symbol:ocelot_sb_tc_pool_bind_set mscc_ocelot_switch_lib
 alias symbol:ath11k_pcic_get_ce_msi_idx ath11k
 alias symbol:cx2341x_ctrl_get_menu cx2341x
+alias symbol:iwl_uefi_get_puncturing iwlwifi
 alias symbol:mt76_write_mac_initvals mt76x2_common
 alias symbol:mt792xu_stop mt792x_usb
 alias symbol:rtl92d_dm_check_edca_turbo rtl8192d_common
@@ -6355,6 +6360,7 @@ alias symbol:ath11k_pcic_write32 ath11k
 alias symbol:cdc_ncm_bind_common cdc_ncm
 alias symbol:hci_unregister_dev bluetooth
 alias symbol:bcma_host_pci_up bcma
+alias symbol:i2c_register_spd i2c_smbus
 alias symbol:ieee80211_hdrlen cfg80211
 alias symbol:o2net_fill_node_map ocfs2_nodemanager
 alias symbol:snd_dmaengine_pcm_prepare_slave_config snd_soc_core
