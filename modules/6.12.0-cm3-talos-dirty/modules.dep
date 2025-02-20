@@ -113,7 +113,6 @@ kernel/fs/orangefs/orangefs.ko:
 kernel/fs/udf/udf.ko: kernel/drivers/cdrom/cdrom.ko
 kernel/fs/omfs/omfs.ko:
 kernel/fs/jfs/jfs.ko: kernel/fs/nls/nls_ucs2_utils.ko
-kernel/fs/xfs/xfs.ko:
 kernel/fs/9p/9p.ko: kernel/net/9p/9pnet.ko kernel/fs/netfs/netfs.ko
 kernel/fs/afs/kafs.ko: kernel/net/rxrpc/rxrpc.ko kernel/fs/netfs/netfs.ko
 kernel/fs/nilfs2/nilfs2.ko:

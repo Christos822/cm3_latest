@@ -110,7 +110,6 @@ alias fs-adfs adfs
 alias fs-udf udf
 alias fs-omfs omfs
 alias fs-jfs jfs
-alias fs-xfs xfs
 alias fs-9p 9p
 alias fs-afs kafs
 alias fs-nilfs2 nilfs2

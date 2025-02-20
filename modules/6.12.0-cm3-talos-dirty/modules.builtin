@@ -32,6 +32,7 @@ kernel/fs/nls/nls_ascii.ko
 kernel/fs/unicode/utf8data.ko
 kernel/fs/fuse/fuse.ko
 kernel/fs/overlayfs/overlay.ko
+kernel/fs/xfs/xfs.ko
 kernel/fs/btrfs/btrfs.ko
 kernel/fs/f2fs/f2fs.ko
 kernel/fs/pstore/pstore.ko
@@ -262,6 +263,7 @@ kernel/drivers/tty/serial/serial_mctrl_gpio.ko
 kernel/drivers/tty/serdev/serdev.ko
 kernel/drivers/char/virtio_console.ko
 kernel/drivers/char/tpm/tpm.ko
+kernel/drivers/iommu/arm/arm-smmu/arm_smmu.ko
 kernel/drivers/iommu/arm/arm-smmu-v3/arm_smmu_v3.ko
 kernel/drivers/iommu/iova.ko
 kernel/drivers/gpu/drm/drm.ko
@@ -463,7 +465,6 @@ kernel/drivers/firmware/arm_scmi/transports/scmi_transport_mailbox.ko
 kernel/drivers/firmware/arm_scmi/scmi-core.ko
 kernel/drivers/firmware/arm_scmi/scmi-module.ko
 kernel/drivers/firmware/efi/efi-pstore.ko
-kernel/drivers/firmware/efi/efibc.ko
 kernel/drivers/crypto/amlogic/amlogic-gxl-crypto.ko
 kernel/drivers/hid/hid.ko
 kernel/drivers/hid/hid-generic.ko

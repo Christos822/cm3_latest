@@ -113,7 +113,6 @@ kernel/fs/orangefs/orangefs.ko
 kernel/fs/udf/udf.ko
 kernel/fs/omfs/omfs.ko
 kernel/fs/jfs/jfs.ko
-kernel/fs/xfs/xfs.ko
 kernel/fs/9p/9p.ko
 kernel/fs/afs/kafs.ko
 kernel/fs/nilfs2/nilfs2.ko
