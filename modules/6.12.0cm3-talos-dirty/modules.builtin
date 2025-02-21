@@ -38,6 +38,7 @@ kernel/fs/nls/nls_ascii.ko
 kernel/fs/unicode/utf8data.ko
 kernel/fs/fuse/fuse.ko
 kernel/fs/overlayfs/overlay.ko
+kernel/fs/xfs/xfs.ko
 kernel/fs/btrfs/btrfs.ko
 kernel/fs/f2fs/f2fs.ko
 kernel/fs/pstore/pstore.ko
