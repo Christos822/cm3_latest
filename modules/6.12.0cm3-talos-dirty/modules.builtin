@@ -164,6 +164,7 @@ kernel/lib/fonts/font.ko
 kernel/lib/oid_registry.ko
 kernel/lib/ucs2_string.ko
 kernel/drivers/bus/arm-cci.ko
+kernel/drivers/phy/phy-can-transceiver.ko
 kernel/drivers/phy/rockchip/phy-rockchip-dp.ko
 kernel/drivers/phy/rockchip/phy-rockchip-emmc.ko
 kernel/drivers/phy/rockchip/phy-rockchip-inno-hdmi.ko
@@ -317,6 +318,9 @@ kernel/drivers/mtd/mtdblock.ko
 kernel/drivers/mtd/chips/chipreg.ko
 kernel/drivers/mtd/nand/nandcore.ko
 kernel/drivers/mtd/nand/spi/spinand.ko
+kernel/drivers/spi/spidev.ko
+kernel/drivers/spi/spi-bitbang.ko
+kernel/drivers/spi/spi-gpio.ko
 kernel/drivers/spi/spi-pl022.ko
 kernel/drivers/spi/spi-rockchip.ko
 kernel/drivers/spmi/spmi.ko
@@ -351,6 +355,11 @@ kernel/drivers/net/veth.ko
 kernel/drivers/net/virtio_net.ko
 kernel/drivers/net/vxlan/vxlan.ko
 kernel/drivers/net/geneve.ko
+kernel/drivers/net/can/vcan.ko
+kernel/drivers/net/can/dev/can-dev.ko
+kernel/drivers/net/can/spi/mcp251x.ko
+kernel/drivers/net/can/spi/mcp251xfd/mcp251xfd.ko
+kernel/drivers/net/can/xilinx_can.ko
 kernel/drivers/net/ethernet/amd/xgbe/amd-xgbe.ko
 kernel/drivers/net/ethernet/cadence/macb.ko
 kernel/drivers/net/ethernet/cavium/common/cavium_ptp.ko
@@ -529,6 +538,7 @@ kernel/drivers/android/binder.ko
 kernel/drivers/nvmem/layouts/u-boot-env.ko
 kernel/drivers/nvmem/nvmem_rockchip_efuse.ko
 kernel/drivers/nvmem/nvmem-rockchip-otp.ko
+kernel/drivers/mux/mux-core.ko
 kernel/net/core/selftests.ko
 kernel/net/core/failover.ko
 kernel/net/llc/llc.ko
@@ -822,6 +832,8 @@ kernel/net/bridge/netfilter/ebt_nflog.ko
 kernel/net/dsa/dsa_core.ko
 kernel/net/x25/x25.ko
 kernel/net/lapb/lapb.ko
+kernel/net/can/can.ko
+kernel/net/can/j1939/can-j1939.ko
 kernel/net/atm/atm.ko
 kernel/net/l2tp/l2tp_core.ko
 kernel/net/phonet/phonet.ko

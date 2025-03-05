@@ -170,7 +170,6 @@ kernel/drivers/phy/rockchip/phy-rockchip-dphy-rx0.ko:
 kernel/drivers/phy/rockchip/phy-rockchip-inno-csidphy.ko:
 kernel/drivers/phy/rockchip/phy-rockchip-inno-dsidphy.ko:
 kernel/drivers/phy/rockchip/phy-rockchip-usbdp.ko: kernel/drivers/usb/typec/typec.ko
-kernel/drivers/phy/phy-can-transceiver.ko: kernel/drivers/mux/mux-core.ko
 kernel/drivers/pinctrl/pinctrl-as3722.ko:
 kernel/drivers/pinctrl/pinctrl-stmfx.ko: kernel/drivers/mfd/stmfx.ko
 kernel/drivers/gpio/gpio-regmap.ko:
@@ -492,13 +491,11 @@ kernel/drivers/nvme/target/nvme-loop.ko: kernel/drivers/nvme/target/nvmet.ko
 kernel/drivers/nvme/target/nvmet-fc.ko: kernel/drivers/nvme/target/nvmet.ko
 kernel/drivers/nvme/target/nvmet-tcp.ko: kernel/drivers/nvme/target/nvmet.ko
 kernel/drivers/ata/ahci_dwc.ko:
-kernel/drivers/spi/spi-mux.ko: kernel/drivers/mux/mux-core.ko
-kernel/drivers/spi/spidev.ko:
+kernel/drivers/spi/spi-mux.ko:
 kernel/drivers/spi/spi-loopback-test.ko:
 kernel/drivers/spi/spi-altera-platform.ko: kernel/drivers/spi/spi-altera-core.ko
 kernel/drivers/spi/spi-altera-core.ko:
 kernel/drivers/spi/spi-axi-spi-engine.ko:
-kernel/drivers/spi/spi-bitbang.ko:
 kernel/drivers/spi/spi-cadence.ko:
 kernel/drivers/spi/spi-cadence-xspi.ko:
 kernel/drivers/spi/spi-ch341.ko:
@@ -508,9 +505,8 @@ kernel/drivers/spi/spi-dw-mmio.ko: kernel/drivers/spi/spi-dw.ko
 kernel/drivers/spi/spi-dw-pci.ko: kernel/drivers/spi/spi-dw.ko
 kernel/drivers/spi/spi-fsl-lib.ko:
 kernel/drivers/spi/spi-fsl-spi.ko: kernel/drivers/spi/spi-fsl-lib.ko
-kernel/drivers/spi/spi-gpio.ko: kernel/drivers/spi/spi-bitbang.ko
 kernel/drivers/spi/spi-mxic.ko:
-kernel/drivers/spi/spi-oc-tiny.ko: kernel/drivers/spi/spi-bitbang.ko
+kernel/drivers/spi/spi-oc-tiny.ko:
 kernel/drivers/spi/spi-rockchip-sfc.ko:
 kernel/drivers/spi/spi-tle62x0.ko:
 kernel/drivers/spi/spi-slave-time.ko:
@@ -555,7 +551,41 @@ kernel/drivers/net/mdio/mdio-i2c.ko:
 kernel/drivers/net/mdio/mdio-ipq8064.ko:
 kernel/drivers/net/mdio/mdio-mscc-miim.ko:
 kernel/drivers/net/mdio/mdio-mvusb.ko:
-kernel/drivers/net/mdio/mdio-mux-multiplexer.ko: kernel/drivers/mux/mux-core.ko
+kernel/drivers/net/mdio/mdio-mux-multiplexer.ko:
+kernel/drivers/net/can/spi/hi311x.ko:
+kernel/drivers/net/can/usb/usb_8dev.ko:
+kernel/drivers/net/can/usb/ems_usb.ko:
+kernel/drivers/net/can/usb/etas_es58x/etas_es58x.ko:
+kernel/drivers/net/can/usb/gs_usb.ko:
+kernel/drivers/net/can/usb/kvaser_usb/kvaser_usb.ko:
+kernel/drivers/net/can/usb/mcba_usb.ko:
+kernel/drivers/net/can/usb/peak_usb/peak_usb.ko:
+kernel/drivers/net/can/usb/ucan.ko:
+kernel/drivers/net/can/softing/softing.ko:
+kernel/drivers/net/can/vxcan.ko:
+kernel/drivers/net/can/slcan/slcan.ko:
+kernel/drivers/net/can/cc770/cc770.ko:
+kernel/drivers/net/can/cc770/cc770_platform.ko: kernel/drivers/net/can/cc770/cc770.ko
+kernel/drivers/net/can/c_can/c_can.ko:
+kernel/drivers/net/can/c_can/c_can_platform.ko: kernel/drivers/net/can/c_can/c_can.ko
+kernel/drivers/net/can/c_can/c_can_pci.ko: kernel/drivers/net/can/c_can/c_can.ko
+kernel/drivers/net/can/ctucanfd/ctucanfd.ko:
+kernel/drivers/net/can/ctucanfd/ctucanfd_pci.ko: kernel/drivers/net/can/ctucanfd/ctucanfd.ko
+kernel/drivers/net/can/ctucanfd/ctucanfd_platform.ko: kernel/drivers/net/can/ctucanfd/ctucanfd.ko
+kernel/drivers/net/can/grcan.ko:
+kernel/drivers/net/can/kvaser_pciefd.ko:
+kernel/drivers/net/can/m_can/m_can.ko:
+kernel/drivers/net/can/m_can/m_can_pci.ko: kernel/drivers/net/can/m_can/m_can.ko
+kernel/drivers/net/can/m_can/m_can_platform.ko: kernel/drivers/net/can/m_can/m_can.ko
+kernel/drivers/net/can/m_can/tcan4x5x.ko: kernel/drivers/net/can/m_can/m_can.ko
+kernel/drivers/net/can/peak_canfd/peak_pciefd.ko:
+kernel/drivers/net/can/sja1000/ems_pci.ko: kernel/drivers/net/can/sja1000/sja1000.ko
+kernel/drivers/net/can/sja1000/f81601.ko: kernel/drivers/net/can/sja1000/sja1000.ko
+kernel/drivers/net/can/sja1000/kvaser_pci.ko: kernel/drivers/net/can/sja1000/sja1000.ko
+kernel/drivers/net/can/sja1000/peak_pci.ko: kernel/drivers/net/can/sja1000/sja1000.ko
+kernel/drivers/net/can/sja1000/plx_pci.ko: kernel/drivers/net/can/sja1000/sja1000.ko
+kernel/drivers/net/can/sja1000/sja1000.ko:
+kernel/drivers/net/can/sja1000/sja1000_platform.ko: kernel/drivers/net/can/sja1000/sja1000.ko
 kernel/drivers/net/ethernet/aquantia/atlantic/atlantic.ko:
 kernel/drivers/net/ethernet/asix/ax88796c.ko:
 kernel/drivers/net/ethernet/atheros/atlx/atl1.ko:
@@ -773,44 +803,6 @@ kernel/drivers/net/usb/aqc111.ko: kernel/drivers/net/usb/usbnet.ko
 kernel/drivers/net/usb/r8153_ecm.ko: kernel/drivers/net/usb/r8152.ko kernel/drivers/net/usb/cdc_ether.ko kernel/drivers/net/usb/usbnet.ko
 kernel/drivers/net/vrf.ko:
 kernel/drivers/net/mhi_net.ko: kernel/drivers/bus/mhi/host/mhi.ko
-kernel/drivers/net/can/dev/can-dev.ko:
-kernel/drivers/net/can/spi/hi311x.ko: kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/spi/mcp251x.ko: kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/usb/usb_8dev.ko: kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/usb/ems_usb.ko: kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/usb/etas_es58x/etas_es58x.ko: kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/usb/gs_usb.ko: kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/usb/kvaser_usb/kvaser_usb.ko: kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/usb/mcba_usb.ko: kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/usb/peak_usb/peak_usb.ko: kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/usb/ucan.ko: kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/softing/softing.ko: kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/vcan.ko: kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/vxcan.ko: kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/slcan/slcan.ko: kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/cc770/cc770.ko: kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/cc770/cc770_platform.ko: kernel/drivers/net/can/cc770/cc770.ko kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/c_can/c_can.ko: kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/c_can/c_can_platform.ko: kernel/drivers/net/can/c_can/c_can.ko kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/c_can/c_can_pci.ko: kernel/drivers/net/can/c_can/c_can.ko kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/ctucanfd/ctucanfd.ko: kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/ctucanfd/ctucanfd_pci.ko: kernel/drivers/net/can/ctucanfd/ctucanfd.ko kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/ctucanfd/ctucanfd_platform.ko: kernel/drivers/net/can/ctucanfd/ctucanfd.ko kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/grcan.ko: kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/kvaser_pciefd.ko: kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/m_can/m_can.ko: kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/m_can/m_can_pci.ko: kernel/drivers/net/can/m_can/m_can.ko kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/m_can/m_can_platform.ko: kernel/drivers/net/can/m_can/m_can.ko kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/m_can/tcan4x5x.ko: kernel/drivers/net/can/m_can/m_can.ko kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/peak_canfd/peak_pciefd.ko: kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/sja1000/ems_pci.ko: kernel/drivers/net/can/sja1000/sja1000.ko kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/sja1000/f81601.ko: kernel/drivers/net/can/sja1000/sja1000.ko kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/sja1000/kvaser_pci.ko: kernel/drivers/net/can/sja1000/sja1000.ko kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/sja1000/peak_pci.ko: kernel/drivers/net/can/sja1000/sja1000.ko kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/sja1000/plx_pci.ko: kernel/drivers/net/can/sja1000/sja1000.ko kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/sja1000/sja1000.ko: kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/sja1000/sja1000_platform.ko: kernel/drivers/net/can/sja1000/sja1000.ko kernel/drivers/net/can/dev/can-dev.ko
-kernel/drivers/net/can/xilinx_can.ko: kernel/drivers/net/can/dev/can-dev.ko
 kernel/drivers/net/ppp/ppp_generic.ko: kernel/drivers/net/slip/slhc.ko
 kernel/drivers/net/ppp/ppp_async.ko: kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
 kernel/drivers/net/ppp/bsd_comp.ko: kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
@@ -1156,7 +1148,7 @@ kernel/drivers/i2c/busses/i2c-virtio.ko:
 kernel/drivers/i2c/muxes/i2c-arb-gpio-challenge.ko: kernel/drivers/i2c/i2c-mux.ko
 kernel/drivers/i2c/muxes/i2c-demux-pinctrl.ko:
 kernel/drivers/i2c/muxes/i2c-mux-gpio.ko: kernel/drivers/i2c/i2c-mux.ko
-kernel/drivers/i2c/muxes/i2c-mux-gpmux.ko: kernel/drivers/i2c/i2c-mux.ko kernel/drivers/mux/mux-core.ko
+kernel/drivers/i2c/muxes/i2c-mux-gpmux.ko: kernel/drivers/i2c/i2c-mux.ko
 kernel/drivers/i2c/muxes/i2c-mux-ltc4306.ko: kernel/drivers/i2c/i2c-mux.ko
 kernel/drivers/i2c/muxes/i2c-mux-mlxcpld.ko: kernel/drivers/i2c/i2c-mux.ko
 kernel/drivers/i2c/muxes/i2c-mux-pca9541.ko: kernel/drivers/i2c/i2c-mux.ko
@@ -2427,6 +2419,10 @@ kernel/drivers/iio/industrialio-sw-trigger.ko: kernel/drivers/iio/industrialio-c
 kernel/drivers/perf/arm-cci.ko:
 kernel/drivers/nvmem/nvmem-rmem.ko:
 kernel/drivers/nvmem/nvmem_qcom-spmi-sdam.ko:
+kernel/drivers/mux/mux-adg792a.ko:
+kernel/drivers/mux/mux-adgs1408.ko:
+kernel/drivers/mux/mux-gpio.ko:
+kernel/drivers/mux/mux-mmio.ko:
 kernel/drivers/vdpa/vdpa.ko:
 kernel/drivers/uio/uio.ko:
 kernel/drivers/w1/masters/matrox_w1.ko: kernel/drivers/w1/wire.ko
@@ -2465,11 +2461,6 @@ kernel/drivers/bluetooth/btnxpuart.ko: kernel/net/bluetooth/bluetooth.ko kernel/
 kernel/drivers/bluetooth/btrsi.ko: kernel/net/bluetooth/bluetooth.ko kernel/crypto/ecdh_generic.ko kernel/crypto/ecc.ko kernel/net/rfkill/rfkill.ko
 kernel/drivers/ssb/ssb.ko:
 kernel/drivers/bcma/bcma.ko:
-kernel/drivers/mux/mux-core.ko:
-kernel/drivers/mux/mux-adg792a.ko: kernel/drivers/mux/mux-core.ko
-kernel/drivers/mux/mux-adgs1408.ko: kernel/drivers/mux/mux-core.ko
-kernel/drivers/mux/mux-gpio.ko: kernel/drivers/mux/mux-core.ko
-kernel/drivers/mux/mux-mmio.ko: kernel/drivers/mux/mux-core.ko
 kernel/drivers/gnss/gnss.ko:
 kernel/drivers/gnss/gnss-serial.ko: kernel/drivers/gnss/gnss.ko
 kernel/drivers/gnss/gnss-mtk.ko: kernel/drivers/gnss/gnss-serial.ko kernel/drivers/gnss/gnss.ko
@@ -2731,6 +2722,9 @@ kernel/net/dsa/tag_brcm.ko:
 kernel/net/dsa/tag_none.ko:
 kernel/net/dsa/tag_ocelot.ko:
 kernel/net/dsa/tag_ocelot_8021q.ko:
+kernel/net/can/can-raw.ko:
+kernel/net/can/can-bcm.ko:
+kernel/net/can/can-gw.ko:
 kernel/net/atm/pppoatm.ko: kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
 kernel/net/l2tp/l2tp_ppp.ko: kernel/drivers/net/ppp/pppox.ko kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
 kernel/net/wireless/cfg80211.ko: kernel/net/rfkill/rfkill.ko
@@ -2740,10 +2734,6 @@ kernel/net/wireless/lib80211_crypt_ccmp.ko: kernel/net/wireless/lib80211.ko
 kernel/net/wireless/lib80211_crypt_tkip.ko: kernel/net/wireless/lib80211.ko
 kernel/net/openvswitch/vport-gre.ko: kernel/net/ipv4/ip_gre.ko
 kernel/net/tls/tls.ko:
-kernel/net/can/can.ko:
-kernel/net/can/can-raw.ko: kernel/net/can/can.ko
-kernel/net/can/can-bcm.ko: kernel/net/can/can.ko
-kernel/net/can/can-gw.ko: kernel/net/can/can.ko
 kernel/net/bluetooth/bluetooth.ko: kernel/crypto/ecdh_generic.ko kernel/crypto/ecc.ko kernel/net/rfkill/rfkill.ko
 kernel/net/bluetooth/hidp/hidp.ko: kernel/net/bluetooth/bluetooth.ko kernel/crypto/ecdh_generic.ko kernel/crypto/ecc.ko kernel/net/rfkill/rfkill.ko
 kernel/net/sunrpc/sunrpc.ko:
