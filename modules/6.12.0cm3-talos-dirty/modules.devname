@@ -6,4 +6,3 @@ uinput uinput c10:223
 uhid uhid c10:239
 snd_timer snd/timer c116:33
 snd_seq snd/seq c116:1
-rfkill rfkill c10:242
