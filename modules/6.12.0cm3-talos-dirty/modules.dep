@@ -864,45 +864,33 @@ kernel/drivers/usb/gadget/udc/amd5536udc_pci.ko: kernel/drivers/usb/gadget/udc/s
 kernel/drivers/usb/gadget/udc/goku_udc.ko:
 kernel/drivers/usb/gadget/udc/pch_udc.ko:
 kernel/drivers/usb/gadget/udc/max3420_udc.ko:
-kernel/drivers/usb/gadget/function/usb_f_acm.ko: kernel/drivers/usb/gadget/libcomposite.ko kernel/drivers/usb/gadget/function/u_serial.ko
-kernel/drivers/usb/gadget/function/usb_f_ss_lb.ko: kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/function/u_serial.ko:
-kernel/drivers/usb/gadget/function/usb_f_serial.ko: kernel/drivers/usb/gadget/libcomposite.ko kernel/drivers/usb/gadget/function/u_serial.ko
-kernel/drivers/usb/gadget/function/usb_f_obex.ko: kernel/drivers/usb/gadget/libcomposite.ko kernel/drivers/usb/gadget/function/u_serial.ko
-kernel/drivers/usb/gadget/function/u_ether.ko: kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/function/usb_f_ncm.ko: kernel/drivers/usb/gadget/function/u_ether.ko kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/function/usb_f_ecm.ko: kernel/drivers/usb/gadget/function/u_ether.ko kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/function/usb_f_phonet.ko: kernel/drivers/usb/gadget/function/u_ether.ko kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/function/usb_f_eem.ko: kernel/drivers/usb/gadget/function/u_ether.ko kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/function/usb_f_ecm_subset.ko: kernel/drivers/usb/gadget/function/u_ether.ko kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/function/usb_f_rndis.ko: kernel/drivers/usb/gadget/function/u_ether.ko kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/function/usb_f_mass_storage.ko: kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/function/usb_f_fs.ko: kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/function/u_audio.ko: kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/function/usb_f_uac1.ko: kernel/drivers/usb/gadget/function/u_audio.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/function/usb_f_uac2.ko: kernel/drivers/usb/gadget/function/u_audio.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/function/usb_f_uvc.ko: kernel/drivers/media/common/videobuf2/videobuf2-vmalloc.ko kernel/drivers/media/common/uvc.ko kernel/drivers/media/common/videobuf2/videobuf2-dma-sg.ko kernel/drivers/media/common/videobuf2/videobuf2-memops.ko kernel/drivers/media/common/videobuf2/videobuf2-v4l2.ko kernel/drivers/media/v4l2-core/videodev.ko kernel/drivers/media/common/videobuf2/videobuf2-common.ko kernel/drivers/media/mc/mc.ko kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/function/usb_f_midi.ko: kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-seq-device.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/function/usb_f_hid.ko: kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/function/usb_f_printer.ko: kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/legacy/g_zero.ko: kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/legacy/g_audio.ko: kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/legacy/g_ether.ko: kernel/drivers/usb/gadget/function/usb_f_rndis.ko kernel/drivers/usb/gadget/function/u_ether.ko kernel/drivers/usb/gadget/libcomposite.ko
+kernel/drivers/usb/gadget/function/usb_f_ss_lb.ko:
+kernel/drivers/usb/gadget/function/usb_f_ncm.ko:
+kernel/drivers/usb/gadget/function/usb_f_phonet.ko:
+kernel/drivers/usb/gadget/function/usb_f_mass_storage.ko:
+kernel/drivers/usb/gadget/function/usb_f_fs.ko:
+kernel/drivers/usb/gadget/function/u_audio.ko: kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/drivers/usb/gadget/function/usb_f_uac1.ko: kernel/drivers/usb/gadget/function/u_audio.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/drivers/usb/gadget/function/usb_f_uac2.ko: kernel/drivers/usb/gadget/function/u_audio.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/drivers/usb/gadget/function/usb_f_uvc.ko: kernel/drivers/media/common/videobuf2/videobuf2-vmalloc.ko kernel/drivers/media/common/uvc.ko kernel/drivers/media/common/videobuf2/videobuf2-dma-sg.ko kernel/drivers/media/common/videobuf2/videobuf2-memops.ko kernel/drivers/media/common/videobuf2/videobuf2-v4l2.ko kernel/drivers/media/v4l2-core/videodev.ko kernel/drivers/media/common/videobuf2/videobuf2-common.ko kernel/drivers/media/mc/mc.ko
+kernel/drivers/usb/gadget/function/usb_f_midi.ko: kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-seq-device.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/drivers/usb/gadget/function/usb_f_hid.ko:
+kernel/drivers/usb/gadget/function/usb_f_printer.ko:
+kernel/drivers/usb/gadget/legacy/g_zero.ko:
+kernel/drivers/usb/gadget/legacy/g_audio.ko:
 kernel/drivers/usb/gadget/legacy/gadgetfs.ko:
-kernel/drivers/usb/gadget/legacy/g_ffs.ko: kernel/drivers/usb/gadget/function/usb_f_fs.ko kernel/drivers/usb/gadget/function/usb_f_rndis.ko kernel/drivers/usb/gadget/function/u_ether.ko kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/legacy/g_mass_storage.ko: kernel/drivers/usb/gadget/function/usb_f_mass_storage.ko kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/legacy/g_serial.ko: kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/legacy/g_printer.ko: kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/legacy/g_midi.ko: kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/legacy/g_cdc.ko: kernel/drivers/usb/gadget/function/u_ether.ko kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/legacy/g_hid.ko: kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/legacy/g_multi.ko: kernel/drivers/usb/gadget/function/usb_f_mass_storage.ko kernel/drivers/usb/gadget/function/usb_f_rndis.ko kernel/drivers/usb/gadget/function/u_ether.ko kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/legacy/g_nokia.ko: kernel/drivers/usb/gadget/function/usb_f_mass_storage.ko kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/legacy/g_webcam.ko: kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/legacy/g_ncm.ko: kernel/drivers/usb/gadget/function/u_ether.ko kernel/drivers/usb/gadget/libcomposite.ko
-kernel/drivers/usb/gadget/legacy/g_acm_ms.ko: kernel/drivers/usb/gadget/function/usb_f_mass_storage.ko kernel/drivers/usb/gadget/libcomposite.ko
+kernel/drivers/usb/gadget/legacy/g_ffs.ko: kernel/drivers/usb/gadget/function/usb_f_fs.ko
+kernel/drivers/usb/gadget/legacy/g_mass_storage.ko: kernel/drivers/usb/gadget/function/usb_f_mass_storage.ko
+kernel/drivers/usb/gadget/legacy/g_printer.ko:
+kernel/drivers/usb/gadget/legacy/g_midi.ko:
+kernel/drivers/usb/gadget/legacy/g_cdc.ko:
+kernel/drivers/usb/gadget/legacy/g_hid.ko:
+kernel/drivers/usb/gadget/legacy/g_multi.ko: kernel/drivers/usb/gadget/function/usb_f_mass_storage.ko
+kernel/drivers/usb/gadget/legacy/g_nokia.ko: kernel/drivers/usb/gadget/function/usb_f_mass_storage.ko
+kernel/drivers/usb/gadget/legacy/g_webcam.ko:
+kernel/drivers/usb/gadget/legacy/g_ncm.ko:
+kernel/drivers/usb/gadget/legacy/g_acm_ms.ko: kernel/drivers/usb/gadget/function/usb_f_mass_storage.ko
 kernel/drivers/usb/gadget/legacy/raw_gadget.ko:
-kernel/drivers/usb/gadget/libcomposite.ko:
 kernel/drivers/usb/cdns3/cdns-usb-common.ko:
 kernel/drivers/usb/mon/usbmon.ko:
 kernel/drivers/usb/class/cdc-acm.ko:
